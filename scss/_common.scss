@@ -1,0 +1,49 @@
+$main_color: #003399;
+$sub_color: #00A0E8;
+$point_color: #FED500;
+$text_color: #222;
+
+//ブレイクポイント
+$breakpoints: (
+  "tab": "screen and (max-width: 1024px)",
+  "sp": "screen and (max-width: 630px)",
+  "5s": "screen and (max-width: 332px)",
+);
+
+@mixin mq($breakpoint: sp) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+};
+
+@mixin mq($breakpoint: tab) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+};
+
+
+@mixin inner {
+  max-width: 1300px;
+  width: 90%;
+  margin: 0 auto;
+
+  @include mq(tab) {
+    width: 92%;
+  }
+};
+
+@mixin title {
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 3px;
+    @include mq('tab') {
+      width: 20px;
+    }
+  }
+}

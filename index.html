@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Noto+Sans+JP:wght@100;200;300;400;500;600&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+  
+    <!-- Bootstrap用CSSの読み込み -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <!-- Bootstrap用JavaScriptの読み込み -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <!-- css -->
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  
+    <!-- OGP -->
+    <meta property="og:title" content="朝山医院">
+    <meta property="og:description"
+      content=" ">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content=" ">
+    <meta property="og:image" content=" ">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="朝山医院">
+    <meta name="twitter:card" content="summary_large_image">
+  
+    <!-- favicon apple-touch-icon -->
+    <link rel="icon" href="favicon.ico" id="favicon">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>朝山医院</title>
+    <meta name="description"
+      content="朝山医院">
+  </head>
+  
+  <body>
+    <div class="wrapper">
+      <header class="header" id="header">
+        <div class="header__inner">
+          <img class="logo_pc" src="image/logo.png" alt="ロゴ画像">
+          <div class="nav_wrap">
+            <ul class="navigation">
+              <li><a class="link" href="#product" aria-label="商品へ移動する">商品一覧</a></li>
+              <li><a href="#message" aria-label="代表よりへ移動する">代表より</a></li>
+              <li><a href="#information" aria-label="お知らせへ移動する">お知らせ</a></li>
+              <li><a href="#company" aria-label="会社概要へ移動する">会社概要</a></li>
+              <li class="navbtn navbtn_tel"><a href="tel:0865635657" aria-label="電話をかける">電話でお問合せ</a></li>
+              <li class="navbtn navbtn_line"><a href="https://lin.ee/UQETcqQ" target="_blank" aria-label="LINEへ移動する"><span>LINE</span>でお問合せ</a></li>
+            </ul>
+          </div>
+          <div class="header__sp">
+            <img class="sp_logo" src="image/logo.png" alt="ロゴ画像">
+            <div class="menu-trigger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <nav class="gnav">
+        <div class="gnav__wrap">
+          <ul class="gnav__menu">
+            <li class="gnav__menu__item"><a href="#product" aria-label="商品へ移動する">商品一覧</a></li>
+            <li class="gnav__menu__item"><a href="#message" aria-label="代表よりへ移動する">代表より</a></li>
+            <li class="gnav__menu__item"><a href="#information" aria-label="お知らせへ移動する">お知らせ</a></li>
+            <li class="gnav__menu__item"><a href="#company" aria-label="会社概要へ移動する">会社概要</a></li>
+          </ul>
+        </div>
+        <div class="btns">
+          <a class="tel" href="tel:0865635657" aria-label="電話をかける">電話でお問合せ</a>
+          <a class="line" href="https://lin.ee/UQETcqQ" target="_blank" aria-label="LINEへ移動する">LINEでお問合せ</a>
+        </div>
+      </nav>
+      <!-- sp時追従ボタン -->
+      <div class="fixd_btns">
+        <a class="tel" href="tel:0865635657" aria-label="電話をかける">電話で<br>お問合せ</a>
+        <a class="line" href="https://lin.ee/UQETcqQ" target="_blank" aria-label="LINEへ移動する"><span>LINE</span>で<br>お問合せ</a>
+      </div>
+      <div class="mv">
+        <div class="mv__inner">
+          <div class="mv__text">
+            <div class="text1">
+              コインランドリー事業者の皆様
+            </div>
+            <div class="text2">
+              ビルバリー、コインメック
+            </div>
+            <div class="text2">
+              修理・ローテーション
+            </div>
+            <div class="text3">なんでもご相談ください</div>
+          </div>
+          <div class="btns">
+            <a class="tel" href="tel:0865635657" aria-label="電話">電話でお問合せ</a>
+            <a class="line" href="https://lin.ee/UQETcqQ" target="_blank" aria-label="LINEへ移動する"><span>LINE</span>でお問合せ</a>
+          </div>
+          <div class="text4_wrap">
+            <p class="text4">2024年度の上半期に新紙幣が発行される予定です</p>
+            <p class="text4">ご準備ください。</p>
+          </div>
+          
+        </div>
+      </div>
+      <!-- お悩み -->
+      <section class="worries">
+        <h2>こんな<span>お悩み</span>を<br class="br_sp">お持ちではないですか？</h2>
+        <div class="worries__contents">
+          <ul>
+            <li>見積もりを取ってみたけど高額すぎる</li>
+            <li>質のいいものを使いたいけどコストは<br class="br_sp">おさえたい</li>
+          </ul>
+          <div class="worries_img">
+            <img src="image/worries_img.png" alt="悩んでいる人の画像">
+          </div>
+        </div>
+        <div class="solution">
+          <p class="solution__text1"><span>そ</span><span>の</span><span>お</span><span>悩</span><span>み</span></p>
+          <p class="solution__text2">リスティーズウエストが<br class="br_sp"><span>解</span><span>決</span>します！！</p>
+        </div>
+        <div class="solution_items">
+          <div class="inner">
+            <div class="item">
+              <img src="image/solution_img1.png" alt="電卓で計算する女性の画像">
+              <p>リスティーズウエストはメーカーの特約店！<br>
+                お客様に納得できるお値段で提供します</p>
+            </div>
+            <div class="item">
+              <img src="image/solution_img2.png" alt="ドライバーの画像">
+              <p>お客様ご自身で取り付ける事により<br>
+                更にコストダウン。<br>
+                （どなたでも簡単に交換できます）<br>
+                ※弊社がサポートいたします。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 商品 -->
+      <section class="product" id="product">
+        <h2 class="title">商品一覧<span>products</span></h2>
+        <p class="product__text">
+          機種によってプログラムの変更可能です。<br>
+          お気軽にお問合せください
+        </p>
+        <div class="product_items_wrap">
+          <p class="title">リスティーズブランド / 洗剤・ソフナー</p>
+          <div class="product_items">
+            <!-- 商品1ここから -->
+            <div class="item">
+              <button type="button" class="btn item_btn" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                <div class="cat_wrap">
+                  <span class="cat cat1">コインランドリー用洗剤</span>
+                </div>
+                <img src="image/products/product_img1-1.jpg" alt="リスティーズクリーン18kgの画像">
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel1">リスティーズクリーンS</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="image/products/product_img1-1.jpg" alt="リスティーズクリーン18kgの画像">
+                      <dl>
+                        <dt>品名</dt>
+                        <dd>洗濯用合成洗剤</dd>
+                        <dt>用途</dt>
+                        <dd>綿・麻合・合成繊維用</dd>
+                        <dt>液性</dt>
+                        <dd>弱アルカリ性</dd>
+                        <dt>成分</dt>
+                        <dd>
+                          非イオン界面活性剤<br>
+                          陰イオン界面活性剤<br>
+                          ＰＨ調整剤
+                        </dd>
+                        <dt>正味量</dt>
+                        <dd>18リットル</dd>
+                      </dl>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="product_name">リスティーズクリーン18kg</p>
+            </div>
+            <!-- 商品1ここまで -->
+
+            <!-- 商品2ここから -->
+            <div class="item">
+              <button type="button" class="btn item_btn" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                <div class="cat_wrap">
+                  <span class="cat cat1">コインランドリー用洗剤</span>
+                </div>
+                <img src="image/products/product_img1-2.jpg" alt="リスティーズクリーン18kgの画像">
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel2">リスティーズクリーンＳ スーパー</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="image/products/product_img1-2.jpg" alt="リスティーズクリーン18kgの画像">
+                      <dl>
+                        <dt>品名</dt>
+                        <dd>洗濯用合成洗剤</dd>
+                        <dt>用途</dt>
+                        <dd>綿・麻合・合成繊維用</dd>
+                        <dt>液性</dt>
+                        <dd>弱アルカリ性</dd>
+                        <dt>成分</dt>
+                        <dd>
+                          非イオン界面活性剤<br>
+                          陰イオン界面活性剤<br>
+                          ＰＨ調整剤
+                        </dd>
+                        <dt>正味量</dt>
+                        <dd>18リットル</dd>
+                      </dl>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="product_name">リスティーズスーパークリーン18kg</p>
+            </div>
+            <!-- 商品2ここまで -->
+
+            <!-- 商品3ここから -->
+            <div class="item">
+              <button type="button" class="btn item_btn" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                <div class="cat_wrap">
+                  <span class="cat cat2">コインランドリー用柔軟仕上剤</span>
+                  <span class="cat cat3">無香料</span>
+                </div>
+                <img src="image/products/product_img1-3.jpg" alt="リスティーズソフナーＳ(無香料)">
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel3">リスティーズソフナーＳ(無香料)</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="image/products/product_img1-3.jpg" alt="リスティーズソフナーＳ(無香料)">
+                      <dl>
+                        <dt>品名</dt>
+                        <dd>洗濯用合柔軟仕上剤</dd>
+                        <dt>用途</dt>
+                        <dd>綿・麻合・合成繊維用</dd>
+                        <dt>液性</dt>
+                        <dd>弱酸性</dd>
+                        <dt>成分</dt>
+                        <dd>
+                          陽イオン界面活性剤<br>
+                          保湿剤
+                        </dd>
+                        <dt>正味量</dt>
+                        <dd>18リットル</dd>
+                      </dl>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="product_name">リスティーズソフナー18kg</p>
+            </div>
+            <!-- 商品3ここまで -->
+
+            <!-- 商品4ここから -->
+            <div class="item">
+              <button type="button" class="btn item_btn" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                <div class="cat_wrap">
+                  <span class="cat cat2">コインランドリー用柔軟仕上剤</span>
+                  <span class="cat cat4">香料</span>
+                </div>
+                <img src="image/products/product_img1-4.jpg" alt="リスティーズスーパーソフナー18kg">
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel4">リスティーズスーパーソフナーＳ(香料)</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="image/products/product_img1-4.jpg" alt="リスティーズスーパーソフナー18kg">
+                      <dl>
+                        <dt>品名</dt>
+                        <dd>洗濯用合柔軟仕上剤</dd>
+                        <dt>用途</dt>
+                        <dd>綿・麻合・合成繊維用</dd>
+                        <dt>液性</dt>
+                        <dd>弱酸性</dd>
+                        <dt>成分</dt>
+                        <dd>
+                          陽イオン界面活性剤<br>
+                          保湿剤<br>
+                          香料
+                        </dd>
+                        <dt>正味量</dt>
+                        <dd>18リットル</dd>
+                      </dl>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="product_name">リスティーズスーパーソフナー18kg</p>
+            </div>
+            <!-- 商品4ここまで -->
+
+            <!-- 商品5ここから -->
+            <div class="item">
+              <button type="button" class="btn item_btn" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                <div class="cat_wrap">
+                  <span class="cat cat5">コインランドリー用柔軟仕上剤</span>
+                </div>
+                <img src="image/products/product_img1-5.jpg" alt="リスティーズスニーカークリーン18kg">
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel5" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel5">リスティーズスニーカークリーン</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="image/products/product_img1-5.jpg" alt="リスティーズスニーカークリーン18kg">
+                      <dl>
+                        <dt>品名</dt>
+                        <dd>洗濯用合柔軟仕上剤</dd>
+                        <dt>用途</dt>
+                        <dd>綿・麻合・合成繊維用<br>
+                          その他セルロース系繊維用</dd>
+                        <dt>液性</dt>
+                        <dd>中性</dd>
+                        <dt>成分</dt>
+                        <dd>
+                          ノニオン界面活性剤
+                        </dd>
+                        <dt>正味量</dt>
+                        <dd>18リットル</dd>
+                      </dl>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="product_name">リスティーズスニーカークリーン18kg</p>
+            </div>
+            <!-- 商品5ここまで -->
+
+            <!-- 商品6ここから -->
+            <div class="item">
+              <button type="button" class="btn item_btn" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+                <div class="cat_wrap">
+                  <span class="cat cat6">洗濯用石鹸</span>
+                  <span class="cat cat3">無香料</span>
+                </div>
+                <img src="image/products/product_img1-6.jpg" alt="はな 18リットル">
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel6" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel6">洗濯用石けん(純植物性)「 はな 」 18リットル(無香料)</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="image/products/product_img1-6.jpg" alt="はな 18リットル">
+                      <dl>
+                        <dt>品名</dt>
+                        <dd>洗濯用石けん(純植物性)</dd>
+                        <dt>正味量</dt>
+                        <dd>18リットル</dd>
+                      </dl>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="product_name">はな 18リットル</p>
+              <p class="product_text">純植物性で肌に優しい商品です。無香料。</p>
+            </div>
+            <!-- 商品6ここまで -->
+          </div>
+        </div>
+        <div class="product_items_wrap">
+          <p class="title">自動販売機用パッケージ商品 / <br class="br_sp">コインランドリー専用</p>
+          <div class="product_items">
+            <!-- 商品7ここから -->
+            <div class="item">
+              <button type="button" class="btn item_btn" data-bs-toggle="modal" data-bs-target="#exampleModal7">
+                <div class="cat_wrap">
+                  <span class="cat cat7">乾燥機用仕上剤</span>
+                  <span class="cat cat4">香料</span>
+                </div>
+                <img src="image/products/product_img1-7.jpg" alt="ソフリン 1箱500個入り">
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel7" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel7">ソフリン</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="image/products/product_img1-7.jpg" alt="ソフリン 1箱500個入り">
+                      <dl>
+                        <dt>品名</dt>
+                        <dd>乾燥機用 仕上剤</dd>
+                        <dt>用途</dt>
+                        <dd>静電気防止・柔軟仕上</dd>
+                        <dt>形状</dt>
+                        <dd>シートタイプ</dd>
+                        <dt>特徴</dt>
+                        <dd>
+                          パチパチしない ふっくら やわらか
+                        </dd>
+                      </dl>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="product_name">ソフリン 1箱500個入り</p>
+              <p class="product_text">静電気防止・柔軟仕上。シートタイプの商品です。</p>
+            </div>
+            <!-- 商品7ここまで -->
+
+            <!-- 商品8ここから -->
+            <div class="item">
+              <button type="button" class="btn item_btn" data-bs-toggle="modal" data-bs-target="#exampleModal8">
+                <div class="cat_wrap">
+                  <span class="cat cat7">乾燥機用仕上剤</span>
+                  <span class="cat cat3">無香料</span>
+                </div>
+                <img src="image/products/product_img1-8.jpg" alt="ソフリン 1箱500個入り">
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel8" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel8">ソフリン 無香料</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="image/products/product_img1-8.jpg" alt="ソフリン 1箱500個入り">
+                      <dl>
+                        <dt>品名</dt>
+                        <dd>乾燥機用 仕上剤</dd>
+                        <dt>用途</dt>
+                        <dd>静電気防止・柔軟仕上</dd>
+                        <dt>形状</dt>
+                        <dd>シートタイプ</dd>
+                        <dt>特徴</dt>
+                        <dd>
+                          パチパチしない ふっくら やわらか
+                        </dd>
+                      </dl>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="product_name">ソフリン 1箱500個入り</p>
+              <p class="product_text">静電気防止・柔軟仕上。シートタイプの商品です。</p>
+            </div>
+            <!-- 商品8ここまで -->
+
+            <!-- 商品9ここから -->
+            <div class="item">
+              <button type="button" class="btn item_btn" data-bs-toggle="modal" data-bs-target="#exampleModal9">
+                <div class="cat_wrap">
+                  <span class="cat cat7">乾燥機用仕上剤</span>
+                  <span class="cat cat4">香料</span>
+                </div>
+                <img src="image/products/product_img1-9.jpg" alt="香りソフター 1箱500個入り">
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel9" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel9">香りソフター 森林の香り</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="image/products/product_img1-9.jpg" alt="香りソフター 1箱500個入り">
+                      <dl>
+                        <dt>品名</dt>
+                        <dd>乾燥機用 仕上剤</dd>
+                        <dt>用途</dt>
+                        <dd>柔軟仕上</dd>
+                        <dt>入数</dt>
+                        <dd>1枚入り</dd>
+                      </dl>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="product_name">香りソフター 1箱500個入り</p>
+              <p class="product_text">森林の香りです。</p>
+            </div>
+            <!-- 商品9ここまで -->
+
+            <!-- 商品10ここから -->
+            <div class="item">
+              <button type="button" class="btn item_btn" data-bs-toggle="modal" data-bs-target="#exampleModal9">
+                <div class="cat_wrap">
+                  <span class="cat cat7">乾燥機用仕上剤</span>
+                  <span class="cat cat4">香料</span>
+                </div>
+                <img src="image/products/product_img1-10.jpg" alt="香りソフター 1箱300個入り">
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal10" tabindex="-1" aria-labelledby="exampleModalLabel10" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel10">香りソフター 森林の香り</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="image/products/product_img1-10.jpg" alt="香りソフター 1箱300個入り">
+                      <dl>
+                        <dt>品名</dt>
+                        <dd>乾燥機用 仕上剤</dd>
+                        <dt>用途</dt>
+                        <dd>柔軟仕上</dd>
+                        <dt>入数</dt>
+                        <dd>2枚入り</dd>
+                      </dl>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="product_name">香りソフター 1箱300個入り</p>
+              <p class="product_text">森林の香りです。</p>
+            </div>
+            <!-- 商品10ここまで -->
+
+            <!-- 商品11ここから -->
+            <div class="item">
+              <button type="button" class="btn item_btn" data-bs-toggle="modal" data-bs-target="#exampleModal11">
+                <div class="cat_wrap">
+                  <span class="cat cat7">乾燥機用仕上剤</span>
+                  <span class="cat cat3">無香料</span>
+                </div>
+                <img src="image/products/product_img1-11.jpg" alt="香りソフター 1箱500個入り">
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal11" tabindex="-1" aria-labelledby="exampleModalLabel11" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel11">香りソフター 無香料</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="image/products/product_img1-11.jpg" alt="香りソフター 1箱500個入り">
+                      <dl>
+                        <dt>品名</dt>
+                        <dd>乾燥機用 仕上剤</dd>
+                        <dt>用途</dt>
+                        <dd>柔軟仕上</dd>
+                        <dt>入数</dt>
+                        <dd>1枚入り</dd>
+                      </dl>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="product_name">香りソフター 1箱500個入り</p>
+              <p class="product_text">無香料タイプです。</p>
+            </div>
+            <!-- 商品11ここまで -->
+
+            <!-- 商品12ここから -->
+            <div class="item">
+              <button type="button" class="btn item_btn" data-bs-toggle="modal" data-bs-target="#exampleModal12">
+                <div class="cat_wrap">
+                  <span class="cat cat7">乾燥機用仕上剤</span>
+                  <span class="cat cat3">無香料</span>
+                </div>
+                <img src="image/products/product_img1-12.jpg" alt="香りソフター 1箱300個入り">
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal12" tabindex="-1" aria-labelledby="exampleModalLabel12" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel12">香りソフター 無香料</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="image/products/product_img1-12.jpg" alt="香りソフター 1箱300個入り">
+                      <dl>
+                        <dt>品名</dt>
+                        <dd>乾燥機用 仕上剤</dd>
+                        <dt>用途</dt>
+                        <dd>柔軟仕上</dd>
+                        <dt>入数</dt>
+                        <dd>2枚入り</dd>
+                      </dl>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="product_name">香りソフター 1箱300個入り</p>
+              <p class="product_text">無香料タイプです。</p>
+            </div>
+            <!-- 商品12ここまで -->
+
+            <!-- 商品13ここから -->
+            <div class="item">
+              <button type="button" class="btn item_btn" data-bs-toggle="modal" data-bs-target="#exampleModal13">
+                <div class="cat_wrap">
+                  <span class="cat cat8">乾燥機用仕上剤</span>
+                </div>
+                <img src="image/products/product_img1-13.jpg" alt="コインランドリー用抗菌洗剤">
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal13" tabindex="-1" aria-labelledby="exampleModalLabel13" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel13">コインランドリー用抗菌洗剤</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="image/products/product_img1-13.jpg" alt="コインランドリー用抗菌洗剤">
+                      <dl>
+                        <dt>品名</dt>
+                        <dd>洗濯機用 洗剤</dd>
+                        <dt>特徴</dt>
+                        <dd>泡立ちを抑えた無りん洗剤</dd>
+                        <dt>形状</dt>
+                        <dd>水溶液フィルムパック</dd>
+                        <dt>入数</dt>
+                        <dd>3枚入り</dd>
+                      </dl>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="product_name">コインランドリー用抗菌洗剤<br>
+                1箱500個入り</p>
+              <p class="product_text">水溶液フィルムパック。1袋入りです。</p>
+            </div>
+            <!-- 商品13ここまで -->
+
+            <!-- 商品14ここから -->
+            <div class="item">
+              <button type="button" class="btn item_btn" data-bs-toggle="modal" data-bs-target="#exampleModal14">
+                <div class="cat_wrap">
+                  <span class="cat cat8">乾燥機用仕上剤</span>
+                </div>
+                <img src="image/products/product_img1-14.jpg" alt="コインランドリー用抗菌洗剤">
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal14" tabindex="-1" aria-labelledby="exampleModalLabel14" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel14">コインランドリー用抗菌洗剤</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="image/products/product_img1-14.jpg" alt="コインランドリー用抗菌洗剤">
+                      <dl>
+                        <dt>品名</dt>
+                        <dd>洗濯機用 洗剤</dd>
+                        <dt>特徴</dt>
+                        <dd>泡立ちを抑えた無りん洗剤</dd>
+                        <dt>形状</dt>
+                        <dd>水溶液フィルムパック</dd>
+                        <dt>入数</dt>
+                        <dd>3枚入り</dd>
+                      </dl>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="product_name">コインランドリー用抗菌洗剤<br>
+                1箱500個入り</p>
+              <p class="product_text">水溶液フィルムパック。3袋入りです。</p>
+            </div>
+            <!-- 商品14ここまで -->
+
+            <!-- 商品15ここから -->
+            <div class="item">
+              <button type="button" class="btn item_btn" data-bs-toggle="modal" data-bs-target="#exampleModal15">
+                <div class="cat_wrap">
+                  <span class="cat cat9">洗濯機用漂白剤</span>
+                </div>
+                <img src="image/products/product_img1-15.jpg" alt="漂白剤 1箱500個入り">
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal15" tabindex="-1" aria-labelledby="exampleModalLabel15" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel15">漂白剤</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="image/products/product_img1-15.jpg" alt="漂白剤 1箱500個入り">
+                      <dl>
+                        <dt>品名</dt>
+                        <dd>洗濯機用 漂白剤</dd>
+                        <dt>特徴</dt>
+                        <dd>酸素系漂白剤</dd>
+                        <dt>入数</dt>
+                        <dd>1枚入り</dd>
+                      </dl>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="product_name">漂白剤 1箱500個入り</p>
+              <p class="product_text">酸素系漂白剤。1袋入りです。</p>
+            </div>
+            <!-- 商品15ここまで -->
+
+            <!-- 商品16ここから -->
+            <div class="item">
+              <button type="button" class="btn item_btn" data-bs-toggle="modal" data-bs-target="#exampleModal16">
+                <div class="cat_wrap">
+                  <span class="cat cat9">洗濯機用漂白剤</span>
+                </div>
+                <img src="image/products/product_img1-16.jpg" alt="漂白剤 1箱300個入り">
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal16" tabindex="-1" aria-labelledby="exampleModalLabel16" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel16">漂白剤</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="image/products/product_img1-16.jpg" alt="漂白剤 1箱300個入り">
+                      <dl>
+                        <dt>品名</dt>
+                        <dd>洗濯機用 漂白剤</dd>
+                        <dt>特徴</dt>
+                        <dd>酸素系漂白剤</dd>
+                        <dt>入数</dt>
+                        <dd>3袋入り</dd>
+                      </dl>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="product_name">漂白剤 1箱300個入り</p>
+              <p class="product_text">酸素系漂白剤。3袋入りです。</p>
+            </div>
+            <!-- 商品16ここまで -->
+
+            <!-- 商品17ここから -->
+            <div class="item">
+              <button type="button" class="btn item_btn" data-bs-toggle="modal" data-bs-target="#exampleModal17">
+                <div class="cat_wrap">
+                  <span class="cat cat11">乾燥機用抗菌剤</span>
+                </div>
+                <img src="image/products/product_img1-17.jpg" alt="抗菌仕上スポンジ">
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal17" tabindex="-1" aria-labelledby="exampleModalLabel17" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel17">抗菌仕上スポンジ</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="image/products/product_img1-17.jpg" alt="抗菌仕上スポンジ">
+                      <dl>
+                        <dt>品名</dt>
+                        <dd>乾燥機用 抗菌仕上剤</dd>
+                        <dt>用途</dt>
+                        <dd>防ダニ加工</dd>
+                        <dt>入数</dt>
+                        <dd>2枚入り</dd>
+                      </dl>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="product_name">抗菌仕上スポンジ<br>
+                1箱300個入り</p>
+              <p class="product_text">防ダニ加工。2枚入りです。</p>
+            </div>
+            <!-- 商品17ここまで -->
+
+            <!-- 商品18ここから -->
+            <div class="item">
+              <button type="button" class="btn item_btn" data-bs-toggle="modal" data-bs-target="#exampleModal18">
+                <div class="cat_wrap">
+                  <span class="cat cat12">洗濯機用抗菌剤</span>
+                </div>
+                <img src="image/products/product_img1-18.jpg" alt="抗菌仕上スポンジ">
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal18" tabindex="-1" aria-labelledby="exampleModalLabel18" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel18">抗菌剤粉末 1箱300個入り</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="image/products/product_img1-18.jpg" alt="抗菌剤粉末 1箱300個入り">
+                      <dl>
+                        <dt>品名</dt>
+                        <dd>洗濯機用 抗菌剤</dd>
+                        <dt>用途</dt>
+                        <dd>抗菌加工</dd>
+                        <dt>入数</dt>
+                        <dd>3袋入り</dd>
+                      </dl>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="product_name">抗菌剤粉末 1箱300個入り</p>
+              <p class="product_text">3袋入りです。</p>
+            </div>
+            <!-- 商品18ここまで -->
+          </div>
+        </div>
+
+        <div class="product_items_wrap">
+          <p class="title mb_1">オートグリス / 自動連続給油機</p>
+          <p class="text">6ヶ月〜1年の消耗品。<br class="br_sp">できるだけ安く取り替えましょう</p>
+          <div class="product_items">
+            <!-- 商品19ここから -->
+            <div class="item">
+              <button type="button" class="btn item_btn" data-bs-toggle="modal" data-bs-target="#exampleModal19">
+                <img src="image/products/product_img1-19.jpg" alt="オートグリススタンダード">
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal19" tabindex="-1" aria-labelledby="exampleModalLabel19" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel19">オートグリススタンダード</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="image/products/product_img1-19.jpg" alt="抗菌剤粉末 1箱300個入り">
+                      <dl>
+                        <dt>品名</dt>
+                        <dd>オートグリススタンダード</dd>
+                        <dt>商品説明</dt>
+                        <dd>コインランドリー向け各メーカー対応。<br>
+                          クリーニング機器など</dd>
+                      </dl>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="product_name">オートグリススタンダード</p>
+              <p class="product_text">コインランドリー向け各メーカー対応。<br>
+                クリーニング機器など</p>
+            </div>
+            <!-- 商品19ここまで -->
+          </div>
+        </div>
+
+        <div class="product_items_wrap">
+          <p class="title">自動販売機部品</p>
+          <div class="product_items">
+            <!-- 商品20ここから -->
+            <div class="item">
+              <button type="button" class="btn item_btn" data-bs-toggle="modal" data-bs-target="#exampleModal20">
+                <img src="image/products/product_img1-20.jpg" alt="旭精工(株)コインセレクター">
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal20" tabindex="-1" aria-labelledby="exampleModalLabel20" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel20">旭精工(株)コインセレクター</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="image/products/product_img1-20.jpg" alt="旭精工(株)コインセレクター">
+                      <dl>
+                        <dt>品名</dt>
+                        <dd>旭精工(株)コインセレクター</dd>
+                        <dt>商品説明</dt>
+                        <dd>自分で交換できます。<br>
+                          商品の詳しい資料は<a href="pdf/rk-coinselec.pdf" target="_blank" rel="noopener">こちら</a></dd>
+                      </dl>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="product_name">旭精工(株)コインセレクター</p>
+              <p class="product_text">自分で交換できます。<br>
+                品番：ＡＦ-６５４<br>
+                　　　ＡＦ-６５１<br>
+                　　　ＡＦ-６５２</p>
+            </div>
+            <!-- 商品20ここまで -->
+
+            <!-- 商品21ここから -->
+            <div class="item">
+              <button type="button" class="btn item_btn" data-bs-toggle="modal" data-bs-target="#exampleModal21">
+                <img src="image/products/product_img1-21.jpg" alt="ビルバリー">
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal21" tabindex="-1" aria-labelledby="exampleModalLabel21" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel21">ビルバリー</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="image/products/product_img1-21.jpg" alt="ビルバリー">
+                      <dl>
+                        <dt>品名</dt>
+                        <dd>ビルバリー</dd>
+                        <dt>商品説明</dt>
+                        <dd>自分で交換できます。<br>
+                          遂に新千円札対応が始まりました。日本コンラックスの特約店にて、優しい価格にて対応します。</dd>
+                      </dl>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="product_name">ビルバリー</p>
+              <p class="product_text">自分で交換できます。<br>
+                遂に新千円札対応が始まりました。日本コンラックスの特約店にて、優しい価格にて対応します。<br>
+                品番：日本コンラックス(株)<br>
+                　　　富士電機(株)<br>
+                　　　パナソニック(株)<br>
+                　　　その他</p>
+            </div>
+            <!-- 商品21ここまで -->
+          </div>
+        </div>
+
+        <div class="product_items_wrap">
+          <p class="title">自動販売機 / 両替機</p>
+          <div class="product_items">
+            <!-- 商品22ここから -->
+            <div class="item">
+              <button type="button" class="btn item_btn" data-bs-toggle="modal" data-bs-target="#exampleModal22">
+                <img src="image/products/product_img1-22.jpg" alt="手動式自動販売機">
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal22" tabindex="-1" aria-labelledby="exampleModalLabel22" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel22">手動式自動販売機</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="image/products/product_img1-22.jpg" alt="手動式自動販売機">
+                      <dl>
+                        <dt>品名</dt>
+                        <dd>手動式自動販売機</dd>
+                        <dt>品番</dt>
+                        <dd>ＤＦ－８</dd>
+                        <dt>商品説明</dt>
+                        <dd>商品の詳しい資料は<a href="pdf/rk-kikai01.pdf" target="_blank" rel="noopener">こちら</a></dd>
+                      </dl>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="product_name">手動式自動販売機</p>
+              <p class="product_text">品番：ＤＦ－８</p>
+            </div>
+            <!-- 商品22ここまで -->
+
+            <!-- 商品23ここから -->
+            <div class="item">
+              <button type="button" class="btn item_btn" data-bs-toggle="modal" data-bs-target="#exampleModal23">
+                <img src="image/products/product_img1-23.jpg" alt="両替機">
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal23" tabindex="-1" aria-labelledby="exampleModalLabel23" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel23">両替機</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="image/products/product_img1-23.jpg" alt="両替機">
+                      <dl>
+                        <dt>品名</dt>
+                        <dd>両替機</dd>
+                        <dt>品番</dt>
+                        <dd>ＦＲ－２０Ｈ2</dd>
+                        <dt>商品説明</dt>
+                        <dd>商品の詳しい資料は<a href="pdf/rk-kikai02.pdf" target="_blank" rel="noopener">こちら</a></dd>
+                      </dl>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="product_name">両替機</p>
+              <p class="product_text">品番：ＦＲ－２０Ｈ2</p>
+            </div>
+            <!-- 商品23ここまで -->
+
+            <!-- 商品24ここから -->
+            <div class="item">
+              <button type="button" class="btn item_btn" data-bs-toggle="modal" data-bs-target="#exampleModal24">
+                <img src="image/products/product_img1-24.jpg" alt="カード販売機付両替機">
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal24" tabindex="-1" aria-labelledby="exampleModalLabel24" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel24">カード販売機付両替機</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="image/products/product_img1-24.jpg" alt="カード販売機付両替機">
+                      <dl>
+                        <dt>品名</dt>
+                        <dd>カード販売機付両替機</dd>
+                        <dt>品番</dt>
+                        <dd>ＦＲ－２０Ｈ1Ｃ</dd>
+                        <dt>商品説明</dt>
+                        <dd>商品の詳しい資料は<a href="pdf/rk-kikai02.pdf" target="_blank" rel="noopener">こちら</a></dd>
+                      </dl>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="product_name">カード販売機付両替機</p>
+              <p class="product_text">品番：ＦＲ－２０Ｈ1Ｃ</p>
+            </div>
+            <!-- 商品24ここまで -->
+
+            <!-- 商品25ここから -->
+            <div class="item">
+              <button type="button" class="btn item_btn" data-bs-toggle="modal" data-bs-target="#exampleModal25">
+                <img src="image/products/product_img1-25.jpg" alt="両替機">
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal25" tabindex="-1" aria-labelledby="exampleModalLabel25" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel25">両替機</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="image/products/product_img1-25.jpg" alt="両替機">
+                      <dl>
+                        <dt>品名</dt>
+                        <dd>両替機</dd>
+                        <dt>品番</dt>
+                        <dd>品番：ＦＲ－３００Ｂ</dd>
+                        <dt>商品説明</dt>
+                        <dd>背面扉式です。<br>
+                          商品の詳しい資料は<a href="pdf/rk-kikai04.pdf" target="_blank" rel="noopener">こちら</a></dd>
+                      </dl>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="product_name">両替機</p>
+              <p class="product_text">背面扉式です。<br>
+                品番：ＦＲ－３００Ｂ</p>
+            </div>
+            <!-- 商品25ここまで -->
+
+            <!-- 商品26ここから -->
+            <div class="item">
+              <button type="button" class="btn item_btn" data-bs-toggle="modal" data-bs-target="#exampleModal26">
+                <img src="image/products/product_img1-26.jpg" alt="カード販売機付両替機">
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal26" tabindex="-1" aria-labelledby="exampleModalLabel26" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel26">カード販売機付両替機</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="image/products/product_img1-26.jpg" alt="カード販売機付両替機">
+                      <dl>
+                        <dt>品名</dt>
+                        <dd>カード販売機付両替機</dd>
+                        <dt>品番</dt>
+                        <dd>品番：ＦＲ－３０１Ｃ</dd>
+                        <dt>商品説明</dt>
+                        <dd>背面扉式です。<br>
+                          商品の詳しい資料は<a href="pdf/rk-kikai04.pdf" target="_blank" rel="noopener">こちら</a></dd>
+                      </dl>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="product_name">カード販売機付両替機</p>
+              <p class="product_text">背面扉式です。<br>
+                品番：ＦＲ－３０１Ｃ</p>
+            </div>
+            <!-- 商品26ここまで -->
+
+            <!-- 商品27ここから -->
+            <div class="item">
+              <button type="button" class="btn item_btn" data-bs-toggle="modal" data-bs-target="#exampleModal27">
+                <img src="image/products/product_img1-27.jpg" alt="販売機能付両替機">
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal27" tabindex="-1" aria-labelledby="exampleModalLabel27" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel27">販売機能付両替機</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="image/products/product_img1-27.jpg" alt="販売機能付両替機">
+                      <dl>
+                        <dt>品名</dt>
+                        <dd>販売機能付両替機</dd>
+                        <dt>品番</dt>
+                        <dd>品番：ＦＶ－５Ｈ</dd>
+                        <dt>商品説明</dt>
+                        <dd>
+                          商品の詳しい資料は<a href="pdf/rk-kikai06.pdf" target="_blank" rel="noopener">こちら</a></dd>
+                      </dl>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="product_name">販売機能付両替機</p>
+              <p class="product_text">
+                品番：ＦＶ－５Ｈ</p>
+            </div>
+            <!-- 商品27ここまで -->
+          </div>
+        </div>
+      </section>
+      <!-- 代表より -->
+      <section class="message" id="message">
+        <h2 class="title">代表より<span>message</span></h2>
+        <div class="message__contents">
+          <p class="text">
+            事業運営とは、利益追求ではなく、安くて良い製品を継続的に流通し、共に喜び共に分かち合える事だと思います。 さらに起業した頃の情熱を忘れずお客様との対話を大切に、業界の情報を一早く届ける経営を心がけます。
+          </p>
+          <div class="img">
+            <img src="image/message_img.jpg" alt="笠岡湾干拓地">
+            <p>岡山県笠岡市は岡山県で最も南西に位置し美しい瀬戸内海を望む街です。【写真は笠岡湾干拓地】</p>
+          </div>
+        </div>
+      </section>
+      <!-- お知らせ -->
+      <section class="information" id="information">
+        <h2 class="title">お知らせ<span>information</span></h2>
+        <div class="information__contents">
+          <p>お時なミニミニ情報を<br class="br_sp">毎月好評発行中です</p>
+        </div>
+      </section>
+      <!-- 会社概要 -->
+      <section class="company" id="company">
+        <h2 class="title">会社概要<span>company</span></h2>
+        <dl>
+          <dt>会社名</dt>
+          <dd>株式会社リスティーズウエスト</dd>
+          <dt>住所</dt>
+          <dd>〒714-0094<br>岡山県笠岡市七番町1-26</dd>
+          <dt>TEL</dt>
+          <dd>0865-63-5657</dd>
+          <dt>FAX</dt>
+          <dd>0865-63-5675</dd>
+          <dt>設立</dt>
+          <dd>2010年5月6日</dd>
+          <dt>代表取締役</dt>
+          <dd>片山 裕（カタヤマ ユタカ）</dd>
+          <dt>事業</dt>
+          <dd>業務用洗剤の製造販売、洗濯機部品の販売等</dd>
+          <dt>営業範囲</dt>
+          <dd>おかげさまで北は北海道、南は鹿児島まで拡大中でございます。</dd>
+          <dt>営業時間</dt>
+          <dd>土日祝日を除く平日 9:00-18:00</dd>
+        </dl>
+      </section>
+    </div>
+    <footer>
+      <small>Copyright2012 ResteesWest,Ltd. All Rights Reserved.</small>       
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>

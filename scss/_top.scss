@@ -1,0 +1,915 @@
+@use "common";
+
+/*---------------------------------
+
+  共通
+
+---------------------------------*/
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Sawarabi Mincho', serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.6em;
+  color: common.$text_color;
+  line-height: 1.7;
+  background-color: #fff;
+}
+a {
+  text-decoration: none;
+  transition: .5s;
+  &:hover {
+    opacity: .7;
+  }
+}
+img {
+  width: 100%;
+}
+.wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+
+//pcのみ改行
+.br_pc {
+  @include common.mq('tab') {
+    display: none;
+  }
+}
+//tabサイズ以下で改行
+.br_tab {
+  display: none;
+  @include common.mq('tab') {
+    display: block;
+  }
+}
+//spのみで改行
+.br_sp {
+  display: none;
+  @include common.mq('sp') {
+    display: block;
+  }
+}
+
+.mb_1 {
+  margin-bottom: 1rem !important;
+}
+
+h2.title {
+  text-align: center;
+  letter-spacing: 5px;
+  font-size: 4rem;
+  color: common.$main_color;
+  letter-spacing: 10px;
+  margin-bottom: 6rem;
+  @include common.mq('tab') {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+  }
+  @include common.mq('sp') {
+    font-size: 2rem;
+  }
+  span {
+    display: block;
+    font-size: 3.3rem;
+    color: rgba(common.$main_color, .4);
+    font-family: 'Allura', cursive;
+    letter-spacing: 5px;
+    @include common.mq('tab') {
+      font-size: 2rem;
+    }
+    @include common.mq('sp') {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+
+/*---------------------------------
+
+  スマホ時追従ボタン
+
+---------------------------------*/
+.fixd_btns {
+  position: fixed;
+  z-index: 10;
+  right: 5px;
+  bottom: 15px;
+  display: none;
+  opacity: 0;
+  @include common.mq('tab') {
+    opacity: 1;
+  }
+  a {
+    font-size: 1rem;
+    line-height: 1.3;
+    border-radius: 50%;
+    padding-top: 28px;
+    width: 65px;
+    height: 65px;
+    display: block;
+    text-align: center;
+    position: relative;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      left: 50%;
+      top: 6px;
+      transform: translateX(-50%);
+    }
+    &.tel {
+      background-color: common.$point_color;
+      color: common.$text_color;
+      margin-bottom: 5px;
+      &::before {
+        background-image: url(../image/btn_icon_tel.svg);
+      }
+    }
+    &.line {
+      background-color: #00B900;
+      color: #fff;
+      span {
+        font-family: 'Noto Sans JP', sans-serif;
+      }
+      &::before {
+      background-image: url(../image/btn_icon_line.svg);
+      }
+    }
+  }
+}
+
+/*---------------------------------
+
+  メインビジュアル
+
+---------------------------------*/
+.mv {
+  position: relative;
+  background-image: url(../image/mv_bg_pc.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: auto 100%;
+  z-index: 9;
+  @include common.mq('tab') {
+    border-bottom: none;
+  }
+  .mv_img {
+    position: absolute;
+    width: 42%;
+    right: 3%;
+    bottom: 0;
+    z-index: 1;
+    @include common.mq('sp') {
+      width: 62%;
+      right: -9%;
+    }
+  }
+  &__inner {
+    @include common.inner;
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 3rem;
+    @include common.mq('tab') {
+      display: block;
+      padding-top: 100px;
+    }
+    @include common.mq('sp') {
+      padding-top: 70px;
+      padding-bottom: 1.5rem;
+    }
+  }
+  &__text {
+    .text1 {
+      font-size: 4rem;
+      line-height: 1.3;
+      margin-bottom: 2.4rem;
+      padding: 0 5px;
+      position: relative;
+      width: max-content;
+      @include common.mq('tab') {
+        font-size: 3rem;
+      }
+      @include common.mq('sp') {
+        font-size: 2rem;
+        margin-bottom: 1.2rem;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        background-color: common.$point_color;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 20px;
+        z-index: -1;
+        @include common.mq('sp') {
+          height: 14px;
+        }
+      }
+    }
+    .text2 {
+      font-size: 6.4rem;
+      width: max-content;
+      line-height: 1.3;
+      font-family: 'Noto Sans JP', sans-serif;
+      color: #fff;
+      font-weight: bold;
+      background-color: common.$sub_color;
+      padding: 3px;
+      margin-bottom: 10px;
+      @include common.mq('tab') {
+        font-size: 4.4rem;
+      }
+      @include common.mq('sp') {
+        font-size: 2.8rem;
+      }
+    }
+    .text3 {
+      font-size: 4rem;
+      margin-bottom: 6rem;
+      @include common.mq('tab') {
+        font-size: 3rem;
+      }
+      @include common.mq('sp') {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+      }
+    }
+  }
+  .btns {
+    display: flex;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 3;
+    a {
+      font-size: 2.2rem;
+      height: 7rem;
+      padding-left: 26px;
+      border-radius: 50px;
+      width: 320px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      @include common.mq('tab') {
+        font-size: 1.6rem;
+        height: 4.5rem;
+        width: 200px;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        top: 50%;
+        left: 18px;
+        transform: translateY(-50%);
+        @include common.mq('tab') {
+          width: 25px;
+          height: 25px;
+        }
+      }
+      &.tel {
+        background-color: common.$point_color;
+        margin-right: 15px;
+        color: common.$text_color;
+        @include common.mq('tab') {
+          margin-bottom: 10px;
+        }
+        &::before {
+          background-image: url(../image/btn_icon_tel.svg);
+        }
+      }
+      &.line {
+        background-color: #00B900;
+        color: #fff;
+        span {
+          font-family: 'Noto Sans JP', sans-serif;
+        }
+        &::before {
+        background-image: url(../image/btn_icon_line.svg);
+        }
+      }
+    }
+    @include common.mq('tab') {
+      display: block;
+    }
+  }
+  .text4_wrap {
+    display: flex;
+    @include common.mq('sp') {
+      display: block;
+    }
+  }
+  .text4 {
+    font-size: 2.6rem;
+    position: relative;
+    width: max-content;
+    padding: 0 5px;
+    z-index: 2;
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: common.$point_color;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 20px;
+      z-index: -1;
+      @include common.mq('sp') {
+        height: 8px;
+      }
+    }
+    @include common.mq('tab') {
+      font-size: 2rem;
+    }
+    @include common.mq('sp') {
+      font-size: 1rem;
+    }
+  }
+}
+
+/*---------------------------------
+
+  worries お悩み
+
+---------------------------------*/
+.worries {
+  background: rgba(common.$sub_color, .25);
+  padding-top: 8rem;
+  position: relative;
+  z-index: 3;
+  @include common.mq('tab') {
+    padding-top: 6rem;
+  }
+  @include common.mq('sp') {
+    padding-top: 3rem;
+  }
+  h2 {
+    margin-bottom: 3rem;
+    color: common.$main_color;
+    text-align: center;
+    font-size: 4rem;
+    line-height: 1.7;
+    @include common.mq('tab') {
+      font-size: 3rem;
+    }
+    @include common.mq('sp') {
+      font-size: 2rem;
+    }
+    span {
+      font-size: 6rem;
+      position: relative;
+      margin: 0 5px;
+      @include common.mq('tab') {
+        font-size: 4rem;
+      }
+      @include common.mq('sp') {
+        font-size: 3rem;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        background-color: common.$point_color;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 20px;
+        z-index: -1;
+      }
+
+    }
+  }
+  &__contents {
+    @include common.inner;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 6rem;
+    @include common.mq('tab') {
+      display: block;
+    }
+    ul {
+      list-style: none;
+      @include common.mq('tab') {
+        width: max-content;
+        margin: 0 auto;
+      }
+      li {
+        position: relative;
+        font-size: 2.6rem;
+        margin-bottom: 3rem;
+        padding-left: 50px;
+        @include common.mq('tab') {
+          font-size: 2rem;
+          margin-bottom: 1.6rem;
+        }
+        @include common.mq('sp') {
+          font-size: 1.6rem;
+          padding-left: 30px;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          width: 36px;
+          height: 36px;
+          background-image: url(../image/worries_check_icon.svg);
+          background-size: contain;
+          background-repeat: no-repeat;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+          @include common.mq('tab') {
+            width: 18px;
+            height:18px;
+          }
+        }
+      }
+    }
+    .worries_img {
+      background: #fff;
+      border-radius: 50%;
+      width: 400px;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include common.mq('tab') {
+        margin: 0 auto;
+        width: 360px;
+        height: 360px;
+      }
+      @include common.mq('tab') {
+        width: 270px;
+        height: 270px;
+      }
+      img {
+        width: 77%;
+      }
+    }
+  }
+  .solution {
+    background-color: common.$sub_color;
+    text-align: center;
+    color: #fff;
+    padding: 6rem 0;
+    position: relative;
+    @include common.mq('tab') {
+      padding: 4rem 0 3rem;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url(../image/worries_after.svg);
+      width: 300px;
+      height: 100px;
+      bottom: -80px;
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      left: 50%;
+      transform: translateX(-50%);
+      @include common.mq('tab') {
+        width: 150px;
+        height: 50px;
+        bottom: -40px;
+      }
+    }
+    &__text1 {
+      font-size: 4rem;
+      margin-bottom: 6rem;
+      @include common.mq('tab') {
+        font-size: 3rem;
+        margin-bottom: 3rem;
+      }
+      @include common.mq('sp') {
+        font-size: 2rem;
+      }
+      span {
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          background-color: common.$point_color;
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          top: -20px;
+          left: 50%;
+          transform: translateX(-50%);
+          @include common.mq('tab') {
+            width: 10px;
+            height: 10px;
+            top: -14px;
+          }
+        }
+      }
+    }
+    &__text2 {
+      font-size: 4rem;
+      @include common.mq('tab') {
+        font-size: 3rem;
+      }
+      @include common.mq('sp') {
+        font-size: 2rem;
+        line-height: 2;
+      }
+      span {
+        position: relative;
+        font-size: 6.6rem;
+        margin: 0 5px;
+        @include common.mq('tab') {
+          font-size: 4rem;
+        }
+        @include common.mq('sp') {
+          font-size: 3.3rem;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          background-color: common.$point_color;
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          top: -20px;
+          left: 50%;
+          transform: translateX(-50%);
+          @include common.mq('tab') {
+            width: 10px;
+            height: 10px;
+            top: -10px;
+          }
+        }
+      }
+    }
+  }
+  .solution_items {
+    background: #fff;
+    .inner {
+      @include common.inner;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 9rem 0 6rem;
+    }
+    .item {
+      width: 50%;
+      text-align: center;
+      @include common.mq('sp') {
+        width: 100%;
+        margin-bottom: 6rem;
+      }
+      img {
+        width: auto;
+        height: 300px;
+        margin-bottom: 10px;
+        @include common.mq('tab') {
+          height: 200px;
+        }
+      }
+      &:nth-child(2) {
+        img {
+          height: 250px;
+          @include common.mq('tab') {
+            height: 180px;
+          }
+        }
+      }
+      p {
+        font-size: 2.6rem;
+        @include common.mq('tab') {
+          font-size: 1.6rem;
+        }
+        @include common.mq('sp') {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}
+
+/*---------------------------------
+
+  product 商品
+
+---------------------------------*/
+.product {
+  background-color: #F8F8F8;
+  padding: 6rem 0;
+  @include common.mq('tab') {
+    padding: 3rem 0;
+  }
+  .product__text {
+    font-size: 2.4rem;
+    margin-bottom: 6rem;
+    text-align: center;
+    @include common.mq('tab') {
+      font-size: 1.6rem;
+      margin-bottom: 3rem;
+    }
+    @include common.mq('sp') {
+      font-size: 1.4rem;
+    }
+  }
+  .product_items_wrap {
+    @include common.inner;
+    .title {
+      color: common.$main_color;
+      font-size: 2.6rem;
+      border-bottom: 1px solid common.$main_color;
+      margin-bottom: 4rem;
+      @include common.mq('tab') {
+        font-size: 1.8rem;
+      }
+      @include common.mq('sp') {
+        font-size: 1.6rem;
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+    }
+    .text {
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+      @include common.mq('tab') {
+        font-size: 1.4rem;
+        text-align: center;
+      }
+    }
+  }
+  .product_items {
+    font-family: 'Noto Sans JP', sans-serif;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    .item {
+      width: calc( (100% - 100px) /3 );
+      margin: 0 0 6rem 0;
+      @include common.mq('sp') {
+        width: 100%;
+        margin: 0 0 4rem 0;
+      }
+      &:not(:nth-child(3n)) {
+        margin: 0 50px 6rem 0;
+        @include common.mq('sp') {
+          margin: 0 0 4rem 0;
+        }
+      }
+      .item_btn {
+        position: relative;
+        width: 100%;
+        height: 250px;
+        background: #fff;
+        margin-bottom: 10px;
+        &:hover {
+          opacity: .7;
+        }
+        img {
+          width: auto;
+          height: 80%;
+          @include common.mq('tab') {
+        
+          }
+        }
+        .cat_wrap {
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .cat {
+          color: #fff;
+          font-size: 1.4rem;
+          border-radius: 20px;
+          margin-bottom: 4px;
+          padding: 5px 10px;
+          width: max-content;
+          margin-right: 4px;
+          @include common.mq('tab') {
+            font-size: 1rem;
+            padding: 3px 6px;
+          }
+        }
+        .cat1 {
+          background-color: common.$main_color;
+        }
+        .cat2 {
+          background-color: #007499;
+        }
+        .cat3 {
+          background-color: #439900;
+        }
+        .cat4 {
+          background-color: #EA6088;
+        }
+        .cat5 {
+          background-color: #00996B;
+        }
+        .cat6 {
+          background-color: #EE7B00;
+        }
+        .cat7 {
+          background-color: #00A0E8;
+        }
+        .cat8 {
+          background-color: #003399;
+        }
+        .cat9 {
+          background-color: #990000;
+        }
+        .cat10 {
+          background-color: #00B775;
+        }
+        .cat11 {
+          background-color: #FED500;
+        }
+        .cat12 {
+          background-color: #EE4700;
+        }
+      }
+      .modal-body {
+        img {
+          width: 40%;
+          max-width: 180px;
+          margin: 2rem auto;
+          display: block;
+        }
+        dl {
+          display: flex;
+          flex-wrap: wrap;
+          dt {
+            width: 22%;
+            margin-bottom: 5px;
+          }
+          dd {
+            width: 78%;
+            margin-bottom: 5px;
+          }
+        }
+      }
+      .product_name {
+        font-size: 2.2rem;
+        margin-bottom: 10px;
+        line-height: 1.4;
+        font-weight: bold;
+        @include common.mq('tab') {
+          font-size: 1.6rem;
+        }
+      }
+      .product_text {
+        font-size: 2rem;
+        @include common.mq('tab') {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}
+
+/*---------------------------------
+
+  message　代表より
+
+---------------------------------*/
+.message {
+  padding: 6rem 0;
+  @include common.mq('tab') {
+    padding: 3rem 0;
+  }
+  @include common.inner;
+  &__contents {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include common.mq('tab') {
+      display: block;
+    }
+    .text {
+      width: 48%;
+      font-size: 2.6rem;
+      @include common.mq('tab') {
+        width: 100%;
+        font-size: 1.6rem;
+        margin-bottom: 10px;
+      }
+    }
+    .img {
+      width: 50%;
+      @include common.mq('tab') {
+        width: 100%;
+      }
+      p {
+        font-size: 1.4rem;
+        @include common.mq('sp') {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+/*---------------------------------
+
+  information　お知らせ
+
+---------------------------------*/
+.information {
+  background: #F8F8F8;
+  padding: 6rem 0;
+  @include common.mq('tab') {
+    padding: 3rem 0;
+  }
+  &__contents {
+    background-image: url(../image/info_bg1.png), url(../image/info_bg2.png);
+    background-position: top left, bottom right;
+    background-size: 15%, 20%;
+    background-repeat: no-repeat;
+    @include common.inner;
+    padding: 8rem 0;
+    background-color: #fff;
+    text-align: center;
+    @include common.mq('tab') {
+      padding: 5rem 0;
+    }
+    p {
+      font-size: 2.6rem;
+      @include common.mq('tab') {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+/*---------------------------------
+
+  company　会社概要
+
+---------------------------------*/
+.company {
+  padding: 6rem 0 10rem 0;
+  @include common.mq('tab') {
+    padding: 3rem 0 5rem 0;
+  }
+  dl {
+    @include common.inner;
+    max-width: 960px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.6rem;
+    @include common.mq('sp') {
+      display: block;
+      font-size: 1.4rem;
+    }
+    dt {
+      padding: 14px 0;
+      width: 30%;
+      border-top: 1px solid #222;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(217, 217, 217, 0.70);
+      @include common.mq('sp') {
+        width: 100%;
+        background: transparent;
+        justify-content: left;
+        padding: 8px 0 0 5px;
+      }
+      &:last-of-type {
+        border-bottom: 1px solid #222;
+        @include common.mq('sp') {
+          border-bottom: transparent;
+        }
+      }
+    }
+    dd {
+      padding: 14px;
+      width: 70%;
+      border-top: 1px solid #222;
+      @include common.mq('sp') {
+        width: 100%;
+        border-top: transparent;
+        padding: 0 0 8px 5px;
+      }
+      &:last-of-type {
+        border-bottom: 1px solid #222;
+      }
+    }
+  }
+}
+

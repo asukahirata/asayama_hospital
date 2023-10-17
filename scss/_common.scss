@@ -1,12 +1,10 @@
-$main_color: #003399;
-$sub_color: #00A0E8;
-$point_color: #FED500;
+$main_color: #00AE6E;
 $text_color: #222;
 
 //ブレイクポイント
 $breakpoints: (
   "tab": "screen and (max-width: 1024px)",
-  "sp": "screen and (max-width: 630px)",
+  "sp": "screen and (max-width: 480px)",
   "5s": "screen and (max-width: 332px)",
 );
 

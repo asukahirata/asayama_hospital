@@ -61,4 +61,30 @@ img {
 }
 
 
+/*---------------------------------
 
+  mv
+
+---------------------------------*/
+.mv {
+  position: relative;
+  &__text {
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+    background-color: rgba( common.$main_color, .7);
+    padding: 5rem 10rem;
+    .text1 {
+      font-size: 4rem;
+      font-weight: bold;
+      color: #fff;
+      letter-spacing: 0.1em;
+      margin-bottom: 3rem;
+    }
+    .text2 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #fff;
+    }
+  }
+}

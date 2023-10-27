@@ -354,4 +354,32 @@ img {
   .br_sp {
     display: block;
   }
+}
+
+/*---------------------------------
+
+  mv
+
+---------------------------------*/
+.mv {
+  position: relative;
+}
+.mv__text {
+  position: absolute;
+  left: 0;
+  bottom: 100px;
+  background-color: rgba(0, 174, 110, 0.7);
+  padding: 5rem 10rem;
+}
+.mv__text .text1 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 0.1em;
+  margin-bottom: 3rem;
+}
+.mv__text .text2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

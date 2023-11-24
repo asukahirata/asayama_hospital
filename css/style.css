@@ -358,14 +358,39 @@ img {
 
 .sec_title {
   text-align: center;
+  font-weight: 700;
   color: #00AE6E;
-  font-size: 3rem;
-  letter-spacing: 0.08em;
+  font-size: 3.2rem;
+  letter-spacing: 0.1em;
 }
 .sec_title span {
   display: block;
   font-size: 1.8rem;
   color: #222;
+}
+
+.btn {
+  background-color: #00AE6E;
+  height: 7rem;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  width: max(90%, 470px);
+  position: relative;
+  margin: 0 auto;
+}
+.btn::after {
+  content: " ";
+  background-image: url(../img/btn_arrow_wh.svg);
+  background-size: cover;
+  position: absolute;
+  right: 20px;
+  width: 20px;
+  height: 20px;
 }
 
 /*---------------------------------
@@ -381,7 +406,7 @@ img {
   left: 0;
   bottom: 100px;
   background-color: rgba(0, 174, 110, 0.7);
-  padding: 5rem 10rem;
+  padding: 2rem 8rem;
 }
 .mv__text .text1 {
   font-size: 4rem;
@@ -407,7 +432,7 @@ img {
   padding: 5% 0 10%;
 }
 .about__inner {
-  width: min(1350px, 90%);
+  width: min(1100px, 90%);
   margin: 0 auto;
   background-color: #fff;
   padding: 7rem 4rem;
@@ -434,5 +459,126 @@ img {
   justify-content: space-between;
 }
 .about .contents img {
+  width: 43%;
+}
+.about .contents .text_block {
+  width: 50%;
+}
+.about .contents .text_block p {
+  font-size: 2rem;
+  margin-bottom: 7rem;
+}
+
+/*---------------------------------
+
+  information
+
+---------------------------------*/
+.information {
+  padding: 7rem 0;
+}
+.information__inner {
+  width: min(1100px, 90%);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.information__inner .sec_title {
+  width: 30%;
+  text-align: left;
+}
+.information__inner dl {
+  width: 68%;
+  font-size: 2rem;
+}
+.information__inner dl div {
+  border-bottom: 1px solid #00AE6E;
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+}
+
+/*---------------------------------
+
+  treatment
+
+---------------------------------*/
+.treatment {
+  background-color: #FAFAFA;
+  padding: 7rem 0;
+}
+.treatment__inner {
+  width: min(1100px, 90%);
+  margin: 0 auto;
+}
+.treatment .items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+}
+.treatment .items .item {
   width: 48%;
+  background-color: #fff;
+  padding: 3rem;
+  margin-bottom: 6rem;
+}
+.treatment .items .item .title {
+  margin: 3rem auto;
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: 900;
+  color: #00AE6E;
+}
+.treatment .items .item .text {
+  font-size: 2rem;
+  margin-bottom: 6rem;
+}
+.treatment .items .item .btn {
+  width: 80%;
+}
+
+/*---------------------------------
+
+  introduction
+
+---------------------------------*/
+.introduction {
+  background-image: url(../img/introduction_bg.png);
+  background-size: cover;
+  padding: 20rem 0;
+}
+.introduction__inner {
+  width: min(900px, 90%);
+  margin: 0 auto;
+  background-color: #00AE6E;
+  padding: 5rem 0;
+}
+.introduction__inner .sec_title {
+  color: #fff;
+  margin-bottom: 6rem;
+}
+.introduction__inner .sec_title span {
+  color: #fff;
+}
+.introduction__inner .btn {
+  background-color: #fff;
+  color: #00AE6E;
+  width: min(90%, 470px);
+}
+.introduction__inner .btn::after {
+  background-image: url(../img/btn_arrow_gr.svg);
+}
+
+/*---------------------------------
+
+  access
+
+---------------------------------*/
+.access {
+  padding: 7rem 0;
+}
+.access__inner {
+  width: min(900px, 90%);
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */

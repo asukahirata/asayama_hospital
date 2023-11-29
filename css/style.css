@@ -581,4 +581,10 @@ img {
 .access__inner {
   width: min(900px, 90%);
   margin: 0 auto;
+}
+
+.time_list_wrap {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */

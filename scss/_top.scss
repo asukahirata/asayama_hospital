@@ -286,3 +286,8 @@ img {
     margin: 0 auto;
   }
 }
+.time_list_wrap {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}

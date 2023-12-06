@@ -290,4 +290,57 @@ img {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  margin-top: 3rem;
+  img {
+    width: 48%;
+  }
+  > div {
+    width: 50%;
+  }
+  .time_list {
+    border-collapse: collapse;
+    letter-spacing: 0.08em;
+    margin-bottom: 1rem;
+    tr {
+      th {
+        width: 100px;
+        text-align: left;
+        font-weight: normal;
+      }
+      td {
+        padding: 1rem 1.6rem;
+      }
+      &:not(:last-child) {
+        border-bottom: 1px solid common.$main_color;
+      }
+      &:nth-child(2),
+      &:nth-child(3) {
+        td {
+          color: common.$main_color;
+        }
+      }
+    }
+  }
+  .note {
+    margin-bottom: 1rem;
+  }
+  .tel_wrap {
+    background-color: rgba( common.$main_color, .2);
+    padding: 2rem 0;
+    text-align: center;
+    .tel {
+      font-size: 2.2rem;
+      font-weight: 900;
+      letter-spacing: 0.1em;
+      font-family: Open Sans Hebrew;
+      span {
+        font-size: 1.6rem;
+        font-weight: normal;
+      }
+    }
+    .add {
+      font-size: 1.6rem;
+      letter-spacing: 0.08em;
+    }
+  }
 }

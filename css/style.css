@@ -266,8 +266,7 @@
 
 ---------------------------------*/
 footer {
-  background: #616161;
-  padding: 12px 0;
+  background: #717171;
 }
 @media screen and (max-width: 480px) {
   footer {
@@ -275,6 +274,7 @@ footer {
   }
 }
 footer small {
+  background-color: #222;
   color: #fff;
   font-size: 12px;
   font-family: Noto Sans;
@@ -587,4 +587,52 @@ img {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  margin-top: 3rem;
+}
+.time_list_wrap img {
+  width: 48%;
+}
+.time_list_wrap > div {
+  width: 50%;
+}
+.time_list_wrap .time_list {
+  border-collapse: collapse;
+  letter-spacing: 0.08em;
+  margin-bottom: 1rem;
+}
+.time_list_wrap .time_list tr th {
+  width: 100px;
+  text-align: left;
+  font-weight: normal;
+}
+.time_list_wrap .time_list tr td {
+  padding: 1rem 1.6rem;
+}
+.time_list_wrap .time_list tr:not(:last-child) {
+  border-bottom: 1px solid #00AE6E;
+}
+.time_list_wrap .time_list tr:nth-child(2) td, .time_list_wrap .time_list tr:nth-child(3) td {
+  color: #00AE6E;
+}
+.time_list_wrap .note {
+  margin-bottom: 1rem;
+}
+.time_list_wrap .tel_wrap {
+  background-color: rgba(0, 174, 110, 0.2);
+  padding: 2rem 0;
+  text-align: center;
+}
+.time_list_wrap .tel_wrap .tel {
+  font-size: 2.2rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  font-family: Open Sans Hebrew;
+}
+.time_list_wrap .tel_wrap .tel span {
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+.time_list_wrap .tel_wrap .add {
+  font-size: 1.6rem;
+  letter-spacing: 0.08em;
 }/*# sourceMappingURL=style.css.map */

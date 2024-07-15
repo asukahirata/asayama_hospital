@@ -1,0 +1,71 @@
+@use "common";
+
+/*---------------------------------
+
+  当院について
+
+---------------------------------*/
+.about {
+  .sub_mv { 
+    background-image: url(../img/about/about_mv.png);
+  }
+  .about_text {
+    padding: 14rem 0 30rem;
+    position: relative;
+    > img {
+      position: absolute;
+      left: 0;
+      top: 16%;
+      width: 57%;
+    }
+    .inner {
+      width: min(1200px, 90%);
+      margin: 0 auto;
+      .title {
+        color: common.$main_color;
+        width: max-content;
+        font-size: 3.3rem;
+        font-weight: 500;
+        margin: 0 5rem 3rem auto;
+      }
+      .text {
+        font-size: 1.6rem;
+        margin: 0 5rem 3rem auto;
+        width: min(505px, 90%);
+      }
+    }
+  }
+  .greeting {
+    background-color: #FAFAFA;
+    padding: 6rem 0;
+    .title {
+      text-align: center;
+      color: common.$main_color;
+      font-weight: 700;
+      font-size: 3rem;
+      margin-bottom: 8rem;
+    }
+    .contents {
+      width: min(1200px, 90%);
+      margin: 0 auto;
+      > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        .text_wrap {
+          width: 39%;
+        }
+        .img_wrap {
+          width: 54%;
+          .name_wrap {
+            background-color: common.$main_color;
+            color: #fff;
+          }
+        }
+      }
+      &.contents01 {
+        margin-bottom: 12rem;
+      }
+    }
+  }
+}

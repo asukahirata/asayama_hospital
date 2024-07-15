@@ -545,31 +545,66 @@ img {
 
 /*---------------------------------
 
+  下層ページのmv
+
+---------------------------------*/
+.sub_mv {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 1024px) {
+  .sub_mv {
+    height: 370px;
+  }
+}
+.sub_mv .title {
+  background-color: rgba(0, 174, 110, 0.8);
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 700;
+  padding: 1.6rem 20rem;
+  width: max-content;
+  text-align: center;
+}
+.sub_mv .title span {
+  display: block;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+/*---------------------------------
+
   about
 
 ---------------------------------*/
-.about {
+.top .about {
   background: url(../img/top/about_bg.png);
   background-size: cover;
   padding: 5% 0 10%;
 }
-.about__inner {
+.top .about__inner {
   width: min(1200px, 90%);
   margin: 0 auto;
   background-color: #fff;
   padding: 7rem 10rem;
 }
 @media screen and (max-width: 1024px) {
-  .about__inner {
+  .top .about__inner {
     padding: 5rem 3rem;
   }
 }
 @media screen and (max-width: 480px) {
-  .about__inner {
+  .top .about__inner {
     padding: 5rem 2rem;
   }
 }
-.about .sb_title {
+.top .about .sb_title {
   margin: 6rem auto;
   text-align: center;
   font-size: 2.8rem;
@@ -578,17 +613,17 @@ img {
   width: max-content;
 }
 @media screen and (max-width: 1024px) {
-  .about .sb_title {
+  .top .about .sb_title {
     font-size: 1.8rem;
   }
 }
 @media screen and (max-width: 480px) {
-  .about .sb_title {
+  .top .about .sb_title {
     margin: 3rem auto;
     font-size: 1.6rem;
   }
 }
-.about .sb_title::after {
+.top .about .sb_title::after {
   content: " ";
   position: absolute;
   width: 100%;
@@ -598,39 +633,39 @@ img {
   left: 0;
 }
 @media screen and (max-width: 480px) {
-  .about .sb_title::after {
+  .top .about .sb_title::after {
     bottom: -10px;
   }
 }
-.about .contents {
+.top .about .contents {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
 }
-.about .contents img {
+.top .about .contents img {
   width: 36%;
 }
 @media screen and (max-width: 1024px) {
-  .about .contents img {
+  .top .about .contents img {
     width: 100%;
     margin-bottom: 3rem;
   }
 }
-.about .contents .text_block {
+.top .about .contents .text_block {
   width: 62%;
 }
 @media screen and (max-width: 1024px) {
-  .about .contents .text_block {
+  .top .about .contents .text_block {
     width: 100%;
   }
 }
-.about .contents .text_block p {
+.top .about .contents .text_block p {
   font-size: 2rem;
   margin-bottom: 7rem;
 }
 @media screen and (max-width: 1024px) {
-  .about .contents .text_block p {
+  .top .about .contents .text_block p {
     font-size: 1.6rem;
   }
 }
@@ -889,4 +924,72 @@ img {
 .time_list_wrap .tel_wrap .add {
   font-size: 1.6rem;
   letter-spacing: 0.08em;
+}
+
+/*---------------------------------
+
+  当院について
+
+---------------------------------*/
+.about .sub_mv {
+  background-image: url(../img/about/about_mv.png);
+}
+.about .about_text {
+  padding: 14rem 0 30rem;
+  position: relative;
+}
+.about .about_text > img {
+  position: absolute;
+  left: 0;
+  top: 16%;
+  width: 57%;
+}
+.about .about_text .inner {
+  width: min(1200px, 90%);
+  margin: 0 auto;
+}
+.about .about_text .inner .title {
+  color: #00AE6E;
+  width: max-content;
+  font-size: 3.3rem;
+  font-weight: 500;
+  margin: 0 5rem 3rem auto;
+}
+.about .about_text .inner .text {
+  font-size: 1.6rem;
+  margin: 0 5rem 3rem auto;
+  width: min(505px, 90%);
+}
+.about .greeting {
+  background-color: #FAFAFA;
+  padding: 6rem 0;
+}
+.about .greeting .title {
+  text-align: center;
+  color: #00AE6E;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 8rem;
+}
+.about .greeting .contents {
+  width: min(1200px, 90%);
+  margin: 0 auto;
+}
+.about .greeting .contents > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.about .greeting .contents > div .text_wrap {
+  width: 39%;
+}
+.about .greeting .contents > div .img_wrap {
+  width: 54%;
+}
+.about .greeting .contents > div .img_wrap .name_wrap {
+  background-color: #00AE6E;
+  color: #fff;
+}
+.about .greeting .contents.contents01 {
+  margin-bottom: 12rem;
 }/*# sourceMappingURL=style.css.map */

@@ -15,7 +15,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: 'Zen Kaku Gothic New', sans-serif;
+  font-family: "Zen Kaku Gothic New", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1.6em;
@@ -65,10 +65,19 @@ img {
   color: common.$main_color;
   font-size: 3.2rem;
   letter-spacing: 0.1em;
+  @include common.mq('tab') {
+    font-size: 2.8rem;
+  }
+  @include common.mq('sp') {
+    font-size: 2rem;
+  }
   span {
     display: block;
     font-size: 1.8rem;
     color: common.$text_color;
+    @include common.mq('sp') {
+      font-size: 1.2rem;
+    }
   }
 }
 .btn {
@@ -81,12 +90,16 @@ img {
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  width: max(90%, 470px);
+  width: min(90%, 470px);
   position: relative;
   margin: 0 auto;
+  @include common.mq('sp') {
+    font-size: 1.6rem;
+    height: 5rem;
+  }
   &::after {
     content: " ";
-    background-image: url(../img/btn_arrow_wh.svg);
+    background-image: url(../img/top/btn_arrow_wh.svg);
     background-size: cover;
     position: absolute;
     right: 20px;
@@ -107,17 +120,37 @@ img {
     bottom: 100px;
     background-color: rgba( common.$main_color, .7);
     padding: 2rem 8rem;
+    @include common.mq('tab') {
+      bottom: 30px;
+      padding: 2rem 5rem;
+    }
+    @include common.mq('sp') {
+      padding: 2rem;
+    }
     .text1 {
       font-size: 4rem;
       font-weight: bold;
       color: #fff;
       letter-spacing: 0.1em;
       margin-bottom: 3rem;
+      @include common.mq('tab') {
+        font-size: 2rem;
+      }
+      @include common.mq('sp') {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+      }
     }
     .text2 {
       font-size: 2rem;
       font-weight: bold;
       color: #fff;
+      @include common.mq('tab') {
+        font-size: 1.6rem;
+      }
+      @include common.mq('sp') {
+        font-size: 1.4rem;
+      }
     }
   }
 }
@@ -128,21 +161,35 @@ img {
 
 ---------------------------------*/
 .about {
-  background: url(../img/about_bg.png);
+  background: url(../img/top/about_bg.png);
   background-size: cover;
   padding: 5% 0 10%;
   &__inner {
-    width: min(1100px, 90%);
+    width: min(1200px, 90%);
     margin: 0 auto;
     background-color: #fff;
-    padding: 7rem 4rem;
+    padding: 7rem 10rem;
+    @include common.mq('tab') {
+      padding: 5rem 3rem;
+    }
+    @include common.mq('sp') {
+      padding: 5rem 2rem;
+    }
   }
   .sb_title {
     margin: 6rem auto;
     text-align: center;
     font-size: 2.8rem;
+    font-weight: 500;
     position: relative;
     width: max-content;
+    @include common.mq('tab') {
+      font-size: 1.8rem;
+    }
+    @include common.mq('sp') {
+      margin: 3rem auto;
+      font-size: 1.6rem;
+    }
     &::after {
       content: " ";
       position: absolute;
@@ -151,20 +198,34 @@ img {
       background-color: common.$main_color;
       bottom: 0;
       left: 0;
+      @include common.mq('sp') {
+        bottom: -10px;
+      }
     }
   }
   .contents {
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
     img {
-      width: 43%;
+      width: 36%;
+      @include common.mq('tab') {
+        width: 100%;
+        margin-bottom: 3rem;
+      }
     }
     .text_block {
-      width: 50%;
+      width: 62%;
+      @include common.mq('tab') {
+        width: 100%;
+      }
       p {
         font-size: 2rem;
         margin-bottom: 7rem;
+        @include common.mq('tab') {
+          font-size: 1.6rem;
+        }
       }
     }
   }
@@ -179,22 +240,34 @@ img {
 .information {
   padding: 7rem 0;
   &__inner {
-    width: min(1100px, 90%);
+    width: min(1200px, 90%);
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     .sec_title {
       width: 30%;
       text-align: left;
+      @include common.mq('tab') {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 3rem;
+      }
     }
     dl {
       width: 68%;
       font-size: 2rem;
+      @include common.mq('tab') {
+        width: 100%;
+      }
       div {
         border-bottom: 1px solid common.$main_color;
         margin-bottom: 3rem;
         padding-bottom: 1rem;
+        @include common.mq('sp') {
+          font-size: 1.4rem;
+        }
       }
     }
   }
@@ -211,7 +284,7 @@ img {
   background-color: #FAFAFA;
   padding: 7rem 0;
   &__inner {
-    width: min(1100px, 90%);
+    width: min(1200px, 90%);
     margin: 0 auto;
   }
   .items {
@@ -224,19 +297,41 @@ img {
       background-color: #fff;
       padding: 3rem;
       margin-bottom: 6rem;
+      display: flex;
+      flex-direction: column;
+      @include common.mq('tab') {
+        width: 100%;
+      }
       .title {
         margin: 3rem auto;
         text-align: center;
         font-size: 2.6rem;
-        font-weight: 900;
+        font-weight: 700;
         color: common.$main_color;
+        @include common.mq('sp') {
+          font-size: 1.8rem;
+        }
       }
       .text {
         font-size: 2rem;
         margin-bottom: 6rem;
+        @include common.mq('sp') {
+          font-size: 1.6rem;
+        }
+        span {
+          margin-top: 1.5rem;
+          display: block;
+          &.red {
+            color: #FA4141;
+          }
+          &.small {
+            font-size: 1.4rem;
+          }
+        }
       }
       .btn {
         width: 80%;
+        margin-top: auto;
       }
     }
   }
@@ -248,11 +343,12 @@ img {
 
 ---------------------------------*/
 .introduction {
-  background-image: url(../img/introduction_bg.png);
+  background-image: url(../img/top/introduction_bg.png);
   background-size: cover;
-  padding: 20rem 0;
+  padding: 12rem 0;
+  background-position: center center;
   &__inner {
-    width: min(900px, 90%);
+    width: min(800px, 90%);
     margin: 0 auto;
     background-color: common.$main_color;
     padding: 5rem 0;
@@ -268,7 +364,7 @@ img {
       color: common.$main_color;
       width: min(90%, 470px);
       &::after {
-        background-image: url(../img/btn_arrow_gr.svg);
+        background-image: url(../img/top/btn_arrow_gr.svg);
       }
     }
   }
@@ -282,33 +378,56 @@ img {
 .access {
   padding: 7rem 0;
   &__inner {
-    width: min(900px, 90%);
+    width: min(1200px, 90%);
     margin: 0 auto;
   }
 }
 .time_list_wrap {
   display: flex;
   align-items: flex-start;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 3rem;
   img {
     width: 48%;
+    @include common.mq('tab') {
+      width: 100%;
+      height: 48rem;
+      object-fit: cover;
+    }
+    @include common.mq('sp') {
+      height: 30rem;
+    }
   }
   > div {
-    width: 50%;
+    width: 48%;
+    @include common.mq('tab') {
+      width: 100%;
+    }
   }
   .time_list {
     border-collapse: collapse;
-    letter-spacing: 0.08em;
-    margin-bottom: 1rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    @include common.mq('tab') {
+      font-size: 1.6rem;
+      margin: 2rem auto;
+    }
     tr {
       th {
-        width: 100px;
+        width: 180px;
         text-align: left;
         font-weight: normal;
+        @include common.mq('sp') {
+          width: 110px;
+        }
       }
       td {
-        padding: 1rem 1.6rem;
+        padding: 1rem 2.2rem;
+        @include common.mq('tab') {
+          padding: 1rem;
+        }
       }
       &:not(:last-child) {
         border-bottom: 1px solid common.$main_color;
@@ -322,7 +441,10 @@ img {
     }
   }
   .note {
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
+    @include common.mq('tab') {
+      text-align: center;
+    }
   }
   .tel_wrap {
     background-color: rgba( common.$main_color, .2);
@@ -330,9 +452,10 @@ img {
     text-align: center;
     .tel {
       font-size: 2.2rem;
-      font-weight: 900;
+      font-weight: 700;
       letter-spacing: 0.1em;
       font-family: Open Sans Hebrew;
+      margin-bottom: 2rem;
       span {
         font-size: 1.6rem;
         font-weight: normal;

@@ -200,51 +200,31 @@
   padding: 8rem 0 2rem;
   left: 0;
   top: 0;
-  background: #BFE7F9;
+  background: #D4FFEF;
   z-index: 12;
   display: none;
+  &__wrap {
+      > a {
+        color: common.$main_color;
+        font-weight: 700;
+        font-size: 2.6rem;
+        padding: 2rem;
+      }
+  }
   &__menu {
     margin-bottom: 3rem;
+    padding: 0 2rem;
     &__item {
       a {
         display: block;
-        padding: 1rem 1.5rem;
+        padding: 3rem 1rem;
         color: common.$text_color;
         position: relative;
-        font-size: 2rem;
-        text-align: center;
-        @include common.mq('sp') {
-          font-size: 1.4rem;
-        }
+        font-size: 1.8rem;
+        text-align: left;
+        border-bottom: 1px solid common.$main_color;
       }
     }
   }
-  .btns {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    a {
-      font-size: 1.6rem;
-      height: 4.5rem;
-      padding-left: 26px;
-      border-radius: 50px;
-      width: 200px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      &::before {
-        content: "";
-        position: absolute;
-        width: 25px;
-        height: 25px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        top: 50%;
-        left: 18px;
-        transform: translateY(-50%);
-      }
-    }
-  }
+  
 }

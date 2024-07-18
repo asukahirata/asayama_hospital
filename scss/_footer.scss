@@ -93,14 +93,14 @@ footer {
   small {
     background-color: #222;
     color: #fff;
-    font-size: 12px;
+    font-size: 10px;
     font-family: Noto Sans;
     letter-spacing: 3px;
     text-align: center;
     display: block;
+    padding: 3px 0;
     @include common.mq('sp') {
       letter-spacing: 0;
-      font-size: 10px;
     }
   }
 }

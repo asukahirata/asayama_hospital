@@ -12,11 +12,20 @@
   .about_text {
     padding: 14rem 0 30rem;
     position: relative;
+    @include common.mq('tab') {
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 7rem 0 3rem;
+    }
     > img {
       position: absolute;
       left: 0;
       top: 16%;
       width: 57%;
+      @include common.mq('tab') {
+        position: relative;
+        width: 80%;
+      }
     }
     .inner {
       width: min(1200px, 90%);
@@ -27,11 +36,22 @@
         font-size: 3.3rem;
         font-weight: 500;
         margin: 0 5rem 3rem auto;
+        @include common.mq('tab') {
+          margin: 0 auto 3rem;
+          font-size: 2.3rem;
+        }
+        @include common.mq('sp') {
+          margin: 0 auto 3rem;
+          font-size: 1.8rem;
+        }
       }
       .text {
         font-size: 1.6rem;
         margin: 0 5rem 3rem auto;
         width: min(505px, 90%);
+        @include common.mq('tab') {
+          margin: 0 auto 3rem;
+        }
       }
     }
   }
@@ -50,21 +70,110 @@
       margin: 0 auto;
       > div {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: flex-start;
+        margin-bottom: 3rem;
         .text_wrap {
           width: 39%;
+          line-height: 2;
+          @include common.mq('tab') {
+            order: 2;
+            width: 100%;
+            margin-bottom: 3rem;
+          }
         }
         .img_wrap {
-          width: 54%;
+          width: calc(54% - 2rem);
+          margin-right: 2rem;
+          @include common.mq('tab') {
+            order: 1;
+            width: calc(100% - 2rem);
+            margin-bottom: 3rem;
+          }
           .name_wrap {
             background-color: common.$main_color;
             color: #fff;
+            width: max-content;
+            padding: 1.4rem 6rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            text-align: center;
+            justify-content: center;
+            margin: -2rem -2rem 0 auto;
+            z-index: 2;
+            position: relative;
+            @include common.mq('sp') {
+              padding: 1.4rem 0;
+              width: 100%;
+            }
+            p {
+              font-size: 1.4rem;
+              &:last-child {
+                width: 100%;
+              }
+            }
+            ruby {
+              font-size: 2rem;
+              font-weight: 500;
+              margin-left: 1rem;
+            }
+          }
+        }
+      }
+      .career {
+        background-color: rgba(common.$main_color, .2);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 3rem 6rem;
+        @include common.mq('tab') {
+          padding: 3rem;
+        }
+        > div {
+          width: 46%;
+          @include common.mq('sp') {
+            width: 100%;
+            margin-bottom: 3rem;
+          }
+          dl {
+            dt {
+              font-size: 2rem;
+              color: common.$main_color;
+              border-bottom: 1px solid common.$main_color;
+              font-weight: 500;
+              margin-bottom: 1.6rem;
+              @include common.mq('tab') {
+                font-size: 1.8rem;
+              }
+            }
+            dd {
+              font-size: 1.8rem;
+              margin-bottom: 1rem;
+              @include common.mq('tab') {
+                font-size: 1.4rem;
+              }
+            }
           }
         }
       }
       &.contents01 {
         margin-bottom: 12rem;
+      }
+      &.contents02 {
+        .text_wrap {
+          order: 2;
+        }
+        .img_wrap {
+          order: 1;
+          margin-right: inherit;
+          margin-left: 2rem;
+          .name_wrap {
+            margin: -2rem auto 0 -2rem;
+          }
+        }
       }
     }
   }

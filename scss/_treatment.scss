@@ -1,0 +1,273 @@
+@use "common";
+
+/*---------------------------------
+
+  診療案内
+
+---------------------------------*/
+.treatment {
+  .sub_mv { 
+    background-image: url(../img/treatment/treatment_mv.png);
+  }
+  .sec_title {
+    text-align: center;
+    color: common.$main_color;
+    font-size: 3.2rem;
+    position: relative;
+    font-weight: 600;
+    margin-bottom: 6rem;
+    @include common.mq('sp') {
+      font-size: 2.2rem;
+      margin-bottom: 3rem;
+    }
+    span {
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      top: -2rem;
+      font-size: 3.4rem;
+      font-weight: 300;
+      color: rgba(#D9D9D9, .8);
+      @include common.mq('sp') {
+        font-size: 2rem;
+        top: -1rem;
+      }
+    }
+  }
+  .orthopedics {
+    padding: 7rem 1rem;
+    background-color: #FAFAFA;
+    @include common.mq('sp') {
+      padding: 4rem 1rem;
+    }
+    > .text {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 6rem;
+      @include common.mq('sp') {
+        font-size: 1.6rem;
+      }
+    }
+    .items {
+      width: min(1000px, 90%);
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .item {
+        background-color: #fff;
+        width: 48%;
+        text-align: center;
+        margin-bottom: 4rem;
+        @include common.mq('tab') {
+          width: 100%;
+        }
+        .icon {
+          padding: 2rem 0;
+          background-color: rgba(common.$main_color, .2);
+          img {
+            width: 24%;
+            margin: 0 auto;
+          }
+          p {
+            font-size: 2rem;
+            color: common.$main_color;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            @include common.mq('sp') {
+              font-size: 1.6rem;
+            }
+          }
+        }
+        .title {
+          color: common.$main_color;
+          margin: 1rem auto;
+          font-size: 2rem;
+          @include common.mq('sp') {
+            font-size: 1.6rem;
+          }
+        }
+        .text {
+          font-size: 1.8rem;
+          padding-bottom: 1rem;
+          @include common.mq('sp') {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+  .osteoporosis {
+    padding: 7rem 1rem;
+    @include common.mq('sp') {
+      padding: 4rem 1rem;
+    }
+    .inner {
+      width: min(1200px, 90%);
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-self: flex-start;
+      img {
+        width: 44%;
+        @include common.mq('tab') {
+          width: 100%;
+          margin-bottom: 3rem;
+        }
+      }
+      p {
+        width: 54%;
+        font-size: 2rem;
+        @include common.mq('tab') {
+          width: 100%;
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+  .rehabilitation {
+    padding: 7rem 1rem;
+    background-color: #FAFAFA;
+    @include common.mq('sp') {
+      padding: 4rem 1rem;
+    }
+    .inner {
+      width: min(1200px, 90%);
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      img {
+        width: 44%;
+        @include common.mq('tab') {
+          width: 100%;
+          margin-bottom: 3rem;
+          order: 1;
+        }
+      }
+      .texr_wrap {
+        width: 54%;
+        @include common.mq('tab') {
+          width: 100%;
+          order: 2;
+        }
+        p {
+          &:first-child {
+            font-size: 2.4rem;
+            margin-bottom: 2rem;
+            font-weight: 700;
+            @include common.mq('sp') {
+              font-size: 1.8rem;
+            }
+          }
+          &:nth-child(2) {
+            font-size: 2rem;
+            @include common.mq('sp') {
+              font-size: 1.6rem;
+            }
+          }
+        }
+      }
+      .box {
+        width: 100%;
+        background-color: #fff;
+        padding: 5rem;
+        margin-top: 6rem;
+        @include common.mq('tab') {
+          order: 3;
+        }
+        @include common.mq('sp') {
+          padding: 2rem;
+        }
+        
+        p {
+          &:first-child {
+            color: common.$main_color;
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            font-weight: 700;
+            @include common.mq('sp') {
+              font-size: 1.8rem;
+            }
+          }
+          &:nth-child(2) {
+            font-size: 2rem;
+            @include common.mq('sp') {
+              font-size: 1.6rem;
+            }
+            span {
+              display: block;
+              font-size: 1.4rem;
+              margin-top: 1rem;
+              a {
+                color: common.$main_color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .internalmedicine {
+    padding: 7rem 0;
+    background-color: #fff;
+    @include common.mq('sp') {
+      padding: 4rem 1rem;
+    }
+    .inner {
+      width: min(1200px, 90%);
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      img {
+        width: 44%;
+        @include common.mq('tab') {
+          width: 100%;
+          margin-bottom: 3rem;
+        }
+      }
+      .texr_wrap {
+        width: 54%;
+        @include common.mq('tab') {
+          width: 100%;
+        }
+        p {
+          font-size: 2rem;
+          @include common.mq('sp') {
+            font-size: 1.6rem;
+          }
+        }
+      }
+      .box {
+        width: 100%;
+        background-color: #FAFAFA;
+        padding: 5rem;
+        margin-top: 6rem;
+        @include common.mq('sp') {
+          padding: 2rem;
+        }
+        p {
+          &:first-child {
+            color: common.$main_color;
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            font-weight: 700;
+            @include common.mq('sp') {
+              font-size: 1.8rem;
+            }
+          }
+          &:nth-child(2) {
+            font-size: 2rem;
+            @include common.mq('sp') {
+              font-size: 1.6rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

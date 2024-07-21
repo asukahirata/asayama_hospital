@@ -8,9 +8,6 @@
 footer {
   background: #717171;
   color: #fff;
-  @include common.mq('sp') {
-    padding: 8px 0;
-  }
   .footer_inner {
     width: min(1200px, 90%);
     margin: 0 auto;

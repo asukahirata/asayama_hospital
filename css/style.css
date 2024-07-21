@@ -244,11 +244,6 @@ footer {
   background: #717171;
   color: #fff;
 }
-@media screen and (max-width: 480px) {
-  footer {
-    padding: 8px 0;
-  }
-}
 footer .footer_inner {
   width: min(1200px, 90%);
   margin: 0 auto;
@@ -552,6 +547,7 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  margin-top: 8rem;
   width: 100%;
   height: 480px;
   display: flex;
@@ -561,6 +557,12 @@ img {
 @media screen and (max-width: 1024px) {
   .sub_mv {
     height: 370px;
+    margin-top: 7rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .sub_mv {
+    margin-top: 4rem;
   }
 }
 .sub_mv .title {
@@ -729,21 +731,21 @@ img {
   treatment
 
 ---------------------------------*/
-.treatment {
+.top .treatment {
   background-color: #FAFAFA;
   padding: 7rem 0;
 }
-.treatment__inner {
+.top .treatment__inner {
   width: min(1200px, 90%);
   margin: 0 auto;
 }
-.treatment .items {
+.top .treatment .items {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 4rem;
 }
-.treatment .items .item {
+.top .treatment .items .item {
   width: 48%;
   background-color: #fff;
   padding: 3rem;
@@ -752,11 +754,11 @@ img {
   flex-direction: column;
 }
 @media screen and (max-width: 1024px) {
-  .treatment .items .item {
+  .top .treatment .items .item {
     width: 100%;
   }
 }
-.treatment .items .item .title {
+.top .treatment .items .item .title {
   margin: 3rem auto;
   text-align: center;
   font-size: 2.6rem;
@@ -764,32 +766,37 @@ img {
   color: #00AE6E;
 }
 @media screen and (max-width: 480px) {
-  .treatment .items .item .title {
+  .top .treatment .items .item .title {
     font-size: 1.8rem;
   }
 }
-.treatment .items .item .text {
+.top .treatment .items .item .text {
   font-size: 2rem;
   margin-bottom: 6rem;
 }
 @media screen and (max-width: 480px) {
-  .treatment .items .item .text {
+  .top .treatment .items .item .text {
     font-size: 1.6rem;
   }
 }
-.treatment .items .item .text span {
+.top .treatment .items .item .text span {
   margin-top: 1.5rem;
   display: block;
 }
-.treatment .items .item .text span.red {
+.top .treatment .items .item .text span.red {
   color: #FA4141;
 }
-.treatment .items .item .text span.small {
+.top .treatment .items .item .text span.small {
   font-size: 1.4rem;
 }
-.treatment .items .item .btn {
+.top .treatment .items .item .btn {
   width: 80%;
   margin-top: auto;
+}
+@media screen and (max-width: 480px) {
+  .top .treatment .items .item .btn {
+    width: 100%;
+  }
 }
 
 /*---------------------------------
@@ -1008,6 +1015,12 @@ img {
   font-size: 3rem;
   margin-bottom: 8rem;
 }
+@media screen and (max-width: 480px) {
+  .about .greeting .title {
+    font-size: 2.4rem;
+    margin-bottom: 4rem;
+  }
+}
 .about .greeting .contents {
   width: min(1200px, 90%);
   margin: 0 auto;
@@ -1128,4 +1141,321 @@ img {
 }
 .about .greeting .contents.contents02 .img_wrap .name_wrap {
   margin: -2rem auto 0 -2rem;
+}
+
+/*---------------------------------
+
+  診療案内
+
+---------------------------------*/
+.treatment .sub_mv {
+  background-image: url(../img/treatment/treatment_mv.png);
+}
+.treatment .sec_title {
+  text-align: center;
+  color: #00AE6E;
+  font-size: 3.2rem;
+  position: relative;
+  font-weight: 600;
+  margin-bottom: 6rem;
+}
+@media screen and (max-width: 480px) {
+  .treatment .sec_title {
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+  }
+}
+.treatment .sec_title span {
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  top: -2rem;
+  font-size: 3.4rem;
+  font-weight: 300;
+  color: rgba(217, 217, 217, 0.8);
+}
+@media screen and (max-width: 480px) {
+  .treatment .sec_title span {
+    font-size: 2rem;
+    top: -1rem;
+  }
+}
+.treatment .orthopedics {
+  padding: 7rem 1rem;
+  background-color: #FAFAFA;
+}
+@media screen and (max-width: 480px) {
+  .treatment .orthopedics {
+    padding: 4rem 1rem;
+  }
+}
+.treatment .orthopedics > .text {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 6rem;
+}
+@media screen and (max-width: 480px) {
+  .treatment .orthopedics > .text {
+    font-size: 1.6rem;
+  }
+}
+.treatment .orthopedics .items {
+  width: min(1000px, 90%);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.treatment .orthopedics .items .item {
+  background-color: #fff;
+  width: 48%;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+@media screen and (max-width: 1024px) {
+  .treatment .orthopedics .items .item {
+    width: 100%;
+  }
+}
+.treatment .orthopedics .items .item .icon {
+  padding: 2rem 0;
+  background-color: rgba(0, 174, 110, 0.2);
+}
+.treatment .orthopedics .items .item .icon img {
+  width: 24%;
+  margin: 0 auto;
+}
+.treatment .orthopedics .items .item .icon p {
+  font-size: 2rem;
+  color: #00AE6E;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+@media screen and (max-width: 480px) {
+  .treatment .orthopedics .items .item .icon p {
+    font-size: 1.6rem;
+  }
+}
+.treatment .orthopedics .items .item .title {
+  color: #00AE6E;
+  margin: 1rem auto;
+  font-size: 2rem;
+}
+@media screen and (max-width: 480px) {
+  .treatment .orthopedics .items .item .title {
+    font-size: 1.6rem;
+  }
+}
+.treatment .orthopedics .items .item .text {
+  font-size: 1.8rem;
+  padding-bottom: 1rem;
+}
+@media screen and (max-width: 480px) {
+  .treatment .orthopedics .items .item .text {
+    font-size: 1.4rem;
+  }
+}
+.treatment .osteoporosis {
+  padding: 7rem 1rem;
+}
+@media screen and (max-width: 480px) {
+  .treatment .osteoporosis {
+    padding: 4rem 1rem;
+  }
+}
+.treatment .osteoporosis .inner {
+  width: min(1200px, 90%);
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-self: flex-start;
+}
+.treatment .osteoporosis .inner img {
+  width: 44%;
+}
+@media screen and (max-width: 1024px) {
+  .treatment .osteoporosis .inner img {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+}
+.treatment .osteoporosis .inner p {
+  width: 54%;
+  font-size: 2rem;
+}
+@media screen and (max-width: 1024px) {
+  .treatment .osteoporosis .inner p {
+    width: 100%;
+    font-size: 1.6rem;
+  }
+}
+.treatment .rehabilitation {
+  padding: 7rem 1rem;
+  background-color: #FAFAFA;
+}
+@media screen and (max-width: 480px) {
+  .treatment .rehabilitation {
+    padding: 4rem 1rem;
+  }
+}
+.treatment .rehabilitation .inner {
+  width: min(1200px, 90%);
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.treatment .rehabilitation .inner img {
+  width: 44%;
+}
+@media screen and (max-width: 1024px) {
+  .treatment .rehabilitation .inner img {
+    width: 100%;
+    margin-bottom: 3rem;
+    order: 1;
+  }
+}
+.treatment .rehabilitation .inner .texr_wrap {
+  width: 54%;
+}
+@media screen and (max-width: 1024px) {
+  .treatment .rehabilitation .inner .texr_wrap {
+    width: 100%;
+    order: 2;
+  }
+}
+.treatment .rehabilitation .inner .texr_wrap p:first-child {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+@media screen and (max-width: 480px) {
+  .treatment .rehabilitation .inner .texr_wrap p:first-child {
+    font-size: 1.8rem;
+  }
+}
+.treatment .rehabilitation .inner .texr_wrap p:nth-child(2) {
+  font-size: 2rem;
+}
+@media screen and (max-width: 480px) {
+  .treatment .rehabilitation .inner .texr_wrap p:nth-child(2) {
+    font-size: 1.6rem;
+  }
+}
+.treatment .rehabilitation .inner .box {
+  width: 100%;
+  background-color: #fff;
+  padding: 5rem;
+  margin-top: 6rem;
+}
+@media screen and (max-width: 1024px) {
+  .treatment .rehabilitation .inner .box {
+    order: 3;
+  }
+}
+@media screen and (max-width: 480px) {
+  .treatment .rehabilitation .inner .box {
+    padding: 2rem;
+  }
+}
+.treatment .rehabilitation .inner .box p:first-child {
+  color: #00AE6E;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+@media screen and (max-width: 480px) {
+  .treatment .rehabilitation .inner .box p:first-child {
+    font-size: 1.8rem;
+  }
+}
+.treatment .rehabilitation .inner .box p:nth-child(2) {
+  font-size: 2rem;
+}
+@media screen and (max-width: 480px) {
+  .treatment .rehabilitation .inner .box p:nth-child(2) {
+    font-size: 1.6rem;
+  }
+}
+.treatment .rehabilitation .inner .box p:nth-child(2) span {
+  display: block;
+  font-size: 1.4rem;
+  margin-top: 1rem;
+}
+.treatment .rehabilitation .inner .box p:nth-child(2) span a {
+  color: #00AE6E;
+}
+.treatment .internalmedicine {
+  padding: 7rem 0;
+  background-color: #fff;
+}
+@media screen and (max-width: 480px) {
+  .treatment .internalmedicine {
+    padding: 4rem 1rem;
+  }
+}
+.treatment .internalmedicine .inner {
+  width: min(1200px, 90%);
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.treatment .internalmedicine .inner img {
+  width: 44%;
+}
+@media screen and (max-width: 1024px) {
+  .treatment .internalmedicine .inner img {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+}
+.treatment .internalmedicine .inner .texr_wrap {
+  width: 54%;
+}
+@media screen and (max-width: 1024px) {
+  .treatment .internalmedicine .inner .texr_wrap {
+    width: 100%;
+  }
+}
+.treatment .internalmedicine .inner .texr_wrap p {
+  font-size: 2rem;
+}
+@media screen and (max-width: 480px) {
+  .treatment .internalmedicine .inner .texr_wrap p {
+    font-size: 1.6rem;
+  }
+}
+.treatment .internalmedicine .inner .box {
+  width: 100%;
+  background-color: #FAFAFA;
+  padding: 5rem;
+  margin-top: 6rem;
+}
+@media screen and (max-width: 480px) {
+  .treatment .internalmedicine .inner .box {
+    padding: 2rem;
+  }
+}
+.treatment .internalmedicine .inner .box p:first-child {
+  color: #00AE6E;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+@media screen and (max-width: 480px) {
+  .treatment .internalmedicine .inner .box p:first-child {
+    font-size: 1.8rem;
+  }
+}
+.treatment .internalmedicine .inner .box p:nth-child(2) {
+  font-size: 2rem;
+}
+@media screen and (max-width: 480px) {
+  .treatment .internalmedicine .inner .box p:nth-child(2) {
+    font-size: 1.6rem;
+  }
 }/*# sourceMappingURL=style.css.map */

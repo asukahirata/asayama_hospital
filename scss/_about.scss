@@ -64,6 +64,10 @@
       font-weight: 700;
       font-size: 3rem;
       margin-bottom: 8rem;
+      @include common.mq('sp') {
+        font-size: 2.4rem;
+        margin-bottom: 4rem;
+      }
     }
     .contents {
       width: min(1200px, 90%);

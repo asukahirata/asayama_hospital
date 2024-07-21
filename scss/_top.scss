@@ -175,6 +175,7 @@ img {
   }
   @include common.mq('sp') {
     margin-top: 4rem;
+    height: 220px;
   }
   .title {
     background-color: rgba(common.$main_color, .8);

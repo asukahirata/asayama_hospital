@@ -563,6 +563,7 @@ img {
 @media screen and (max-width: 480px) {
   .sub_mv {
     margin-top: 4rem;
+    height: 220px;
   }
 }
 .sub_mv .title {

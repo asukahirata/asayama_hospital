@@ -11,7 +11,46 @@
   }
   .items {
     width: min(1200px, 90%);
-    margin: 0 auto;
-    
+    margin: 13rem auto 6rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include common.mq('sp') {
+      margin: 6rem auto;
+    }
+    .item {
+      width: 44%;
+      margin-bottom: 6rem;
+      @include common.mq('tab') {
+        width: 100%;
+      }
+      &:nth-child(even) {
+        margin-top: 6rem;
+        @include common.mq('tab') {
+          margin-top: 0;
+        }
+      }
+      img {
+        margin-bottom: 2rem;
+        width: auto;
+        height: 450px;
+        box-shadow: 40px 40px rgba(common.$main_color, .2);
+        @include common.mq('tab') {
+          width: 100%;
+          height: auto;
+        }
+      }
+      p {
+        &:first-of-type {
+          font-size: 2rem;
+          font-weight: 600;
+          color: common.$main_color;
+          border-left: 3px solid common.$main_color;
+          padding-left: 20px;
+          margin-bottom: 26px;
+        }
+      }
+    }
   }
 }

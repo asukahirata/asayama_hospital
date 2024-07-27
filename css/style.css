@@ -80,7 +80,7 @@
 .header .nav_wrap .navigation li a {
   color: #222;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: 500;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -805,31 +805,31 @@ img {
   introduction
 
 ---------------------------------*/
-.introduction {
+.top .introduction {
   background-image: url(../img/top/introduction_bg.png);
   background-size: cover;
   padding: 12rem 0;
   background-position: center center;
 }
-.introduction__inner {
+.top .introduction__inner {
   width: min(800px, 90%);
   margin: 0 auto;
   background-color: #00AE6E;
   padding: 5rem 0;
 }
-.introduction__inner .sec_title {
+.top .introduction__inner .sec_title {
   color: #fff;
   margin-bottom: 6rem;
 }
-.introduction__inner .sec_title span {
+.top .introduction__inner .sec_title span {
   color: #fff;
 }
-.introduction__inner .btn {
+.top .introduction__inner .btn {
   background-color: #fff;
   color: #00AE6E;
   width: min(90%, 470px);
 }
-.introduction__inner .btn::after {
+.top .introduction__inner .btn::after {
   background-image: url(../img/top/btn_arrow_gr.svg);
 }
 
@@ -1459,4 +1459,17 @@ img {
   .treatment .internalmedicine .inner .box p:nth-child(2) {
     font-size: 1.6rem;
   }
+}
+
+/*---------------------------------
+
+  当院について
+
+---------------------------------*/
+.introduction .sub_mv {
+  background-image: url(../img/introduction/introduction_mv.png);
+}
+.introduction .items {
+  width: min(1200px, 90%);
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */

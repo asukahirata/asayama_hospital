@@ -1,0 +1,17 @@
+@use "common";
+
+/*---------------------------------
+
+  当院について
+
+---------------------------------*/
+.introduction {
+  .sub_mv { 
+    background-image: url(../img/introduction/introduction_mv.png);
+  }
+  .items {
+    width: min(1200px, 90%);
+    margin: 0 auto;
+    
+  }
+}

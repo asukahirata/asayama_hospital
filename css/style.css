@@ -1518,4 +1518,211 @@ img {
   border-left: 3px solid #00AE6E;
   padding-left: 20px;
   margin-bottom: 26px;
+}
+
+/*---------------------------------
+
+  当院について
+
+---------------------------------*/
+.osteoporosis .sub_mv {
+  background-image: url(../img/osteoporosis/osteoporosis_mv.png);
+}
+.osteoporosis .sec_1 {
+  padding: 10rem 0;
+}
+@media screen and (max-width: 1024px) {
+  .osteoporosis .sec_1 {
+    padding: 4rem 0;
+  }
+}
+.osteoporosis .sec_1 > .title {
+  color: #00AE6E;
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 6rem;
+  font-weight: 600;
+}
+@media screen and (max-width: 1024px) {
+  .osteoporosis .sec_1 > .title {
+    font-size: 2rem;
+  }
+}
+.osteoporosis .sec_1 .inner {
+  width: min(1200px, 90%);
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.osteoporosis .sec_1 .inner p {
+  width: 55%;
+  font-size: 2rem;
+  line-height: 1.8;
+}
+@media screen and (max-width: 1024px) {
+  .osteoporosis .sec_1 .inner p {
+    width: 100%;
+    order: 2;
+    font-size: 1.6rem;
+  }
+}
+.osteoporosis .sec_1 .inner img {
+  width: calc(45% - 6rem);
+}
+@media screen and (max-width: 1024px) {
+  .osteoporosis .sec_1 .inner img {
+    width: 100%;
+    order: 1;
+    margin-bottom: 3rem;
+  }
+}
+.osteoporosis .sec_2 {
+  position: relative;
+  padding-bottom: 20rem;
+}
+@media screen and (max-width: 1024px) {
+  .osteoporosis .sec_2 {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 8rem;
+  }
+}
+.osteoporosis .sec_2 img {
+  position: absolute;
+  left: 0;
+  top: 17%;
+  width: 43%;
+  box-shadow: 40px 40px rgba(0, 174, 110, 0.2);
+}
+@media screen and (max-width: 1024px) {
+  .osteoporosis .sec_2 img {
+    position: relative;
+    width: 100%;
+  }
+}
+.osteoporosis .sec_2 .text_wrap {
+  width: min(1200px, 90%);
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+.osteoporosis .sec_2 .text_wrap > div {
+  width: 50%;
+}
+@media screen and (max-width: 1024px) {
+  .osteoporosis .sec_2 .text_wrap > div {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+}
+.osteoporosis .sec_2 .text_wrap > div p:nth-of-type(1) {
+  color: #00AE6E;
+  font-size: 3.2rem;
+  margin-bottom: 3rem;
+  font-weight: 600;
+}
+@media screen and (max-width: 1024px) {
+  .osteoporosis .sec_2 .text_wrap > div p:nth-of-type(1) {
+    font-size: 2rem;
+  }
+}
+.osteoporosis .sec_2 .text_wrap > div p:nth-of-type(2) {
+  font-size: 2rem;
+  line-height: 1.8;
+}
+@media screen and (max-width: 1024px) {
+  .osteoporosis .sec_2 .text_wrap > div p:nth-of-type(2) {
+    font-size: 1.6rem;
+  }
+}
+.osteoporosis .sec_3 {
+  background-image: url(../img/osteoporosis/osteoporosis_bg.png);
+  background-size: cover;
+  text-align: center;
+  padding: 8rem 0 12rem;
+}
+@media screen and (max-width: 1024px) {
+  .osteoporosis .sec_3 {
+    padding: 4rem 0 6rem;
+  }
+}
+.osteoporosis .sec_3 > .title {
+  color: #00AE6E;
+  font-size: 3.2rem;
+  margin-bottom: 3rem;
+  font-weight: 600;
+}
+@media screen and (max-width: 1024px) {
+  .osteoporosis .sec_3 > .title {
+    font-size: 2rem;
+  }
+}
+.osteoporosis .sec_3 > .text {
+  font-size: 2rem;
+  line-height: 1.8;
+  margin-bottom: 6rem;
+}
+@media screen and (max-width: 1024px) {
+  .osteoporosis .sec_3 > .text {
+    font-size: 1.6rem;
+  }
+}
+.osteoporosis .sec_3 .items {
+  width: min(1200px, 90%);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.osteoporosis .sec_3 .items .item {
+  width: 32%;
+  background-color: #fff;
+  border: 2px solid #00AE6E;
+  padding: 3rem;
+  position: relative;
+}
+@media screen and (max-width: 1024px) {
+  .osteoporosis .sec_3 .items .item {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+}
+.osteoporosis .sec_3 .items .item .title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #00AE6E;
+  font-weight: 600;
+}
+.osteoporosis .sec_3 .items .item img {
+  width: 100px;
+  margin: 0 auto 3rem;
+}
+@media screen and (max-width: 480px) {
+  .osteoporosis .sec_3 .items .item img {
+    width: 40px;
+  }
+}
+.osteoporosis .sec_3 .items .item p:not([class]) {
+  text-align: left;
+}
+.osteoporosis .sec_3 .items .item::before {
+  content: " ";
+  position: absolute;
+  width: 145px;
+  height: 145px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 2%;
+  left: 2%;
+}
+.osteoporosis .sec_3 .items .item:nth-child(1)::before {
+  background-image: url(../img/osteoporosis/osteoporosis_item1_bg.png);
+}
+.osteoporosis .sec_3 .items .item:nth-child(2)::before {
+  background-image: url(../img/osteoporosis/osteoporosis_item2_bg.png);
+}
+.osteoporosis .sec_3 .items .item:nth-child(3)::before {
+  background-image: url(../img/osteoporosis/osteoporosis_item3_bg.png);
 }/*# sourceMappingURL=style.css.map */

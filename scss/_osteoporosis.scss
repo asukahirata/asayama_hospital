@@ -1,0 +1,190 @@
+@use "common";
+
+/*---------------------------------
+
+  当院について
+
+---------------------------------*/
+.osteoporosis {
+  .sub_mv { 
+    background-image: url(../img/osteoporosis/osteoporosis_mv.png);
+  }
+  .sec_1 {
+    padding: 10rem 0;
+    @include common.mq('tab') {
+      padding: 4rem 0;
+    }
+    > .title {
+      color: common.$main_color;
+      text-align: center;
+      font-size: 4rem;
+      margin-bottom: 6rem;
+      font-weight: 600;
+      @include common.mq('tab') {
+        font-size: 2rem;
+      }
+    }
+    .inner {
+      width: min(1200px, 90%);
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+      p {
+        width: 55%;
+        font-size: 2rem;
+        line-height: 1.8;
+        @include common.mq('tab') {
+          width: 100%;
+          order: 2;
+          font-size: 1.6rem;
+        }
+      }
+      img {
+        width: calc(45% - 6rem);
+        @include common.mq('tab') {
+          width: 100%;
+          order: 1;
+          margin-bottom: 3rem;
+        }
+      }
+    }
+  }
+  .sec_2 {
+    position: relative;
+    padding-bottom: 20rem;
+    @include common.mq('tab') {
+      display: flex;
+      flex-direction: column-reverse;
+      padding-bottom: 8rem;
+    }
+    img {
+      position: absolute;
+      left: 0;
+      top: 17%;
+      width: 43%;
+      box-shadow: 40px 40px rgba(common.$main_color, .2);
+      @include common.mq('tab') {
+        position: relative;
+        width: 100%;
+      }
+    }
+    .text_wrap {
+      width: min(1200px, 90%);
+      margin: 0 auto;
+      display: flex;
+      justify-content: flex-end;
+      > div {
+        width: 50%;
+        @include common.mq('tab') {
+          width: 100%;
+          margin-bottom: 3rem;
+        }
+        p {
+          &:nth-of-type(1) {
+            color: common.$main_color;
+            font-size: 3.2rem;
+            margin-bottom: 3rem;
+            font-weight: 600;
+            @include common.mq('tab') {
+              font-size: 2rem;
+            }
+          }
+          &:nth-of-type(2) {
+            font-size: 2rem;
+            line-height: 1.8;
+            @include common.mq('tab') {
+              font-size: 1.6rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .sec_3 {
+    background-image: url(../img/osteoporosis/osteoporosis_bg.png);
+    background-size: cover;
+    text-align: center;
+    padding: 8rem 0 12rem;
+    @include common.mq('tab') {
+      padding: 4rem 0 6rem;
+    }
+    > .title {
+      color: common.$main_color;
+      font-size: 3.2rem;
+      margin-bottom: 3rem;
+      font-weight: 600;
+      @include common.mq('tab') {
+        font-size: 2rem;
+      }
+    }
+    > .text {
+      font-size: 2rem;
+      line-height: 1.8;
+      margin-bottom: 6rem;
+      @include common.mq('tab') {
+        font-size: 1.6rem;
+      }
+    }
+    .items {
+      width: min(1200px, 90%);
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .item {
+        width: 32%;
+        background-color: #fff;
+        border: 2px solid common.$main_color;
+        padding: 3rem;
+        position: relative;
+        @include common.mq('tab') {
+          width: 100%;
+          margin-bottom: 3rem;
+        }
+        .title {
+          font-size: 2rem;
+          margin-bottom: 2rem;
+          color: common.$main_color;
+          font-weight: 600;
+        }
+        img {
+          width: 100px;
+          margin: 0 auto 3rem;
+          @include common.mq('sp') {
+            width: 40px;
+          }
+        }
+        p:not([class]) {
+          text-align: left;
+        }
+        &::before {
+          content: " ";
+          position: absolute;
+          width: 145px;
+          height: 145px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          top: 2%;
+          left: 2%;
+        }
+        &:nth-child(1) {
+          &::before {
+            background-image: url(../img/osteoporosis/osteoporosis_item1_bg.png);
+          }
+        }
+        &:nth-child(2) {
+          &::before {
+            background-image: url(../img/osteoporosis/osteoporosis_item2_bg.png);
+          }
+        }
+        &:nth-child(3) {
+          &::before {
+            background-image: url(../img/osteoporosis/osteoporosis_item3_bg.png);
+          }
+        }
+      }
+    }
+  }
+}

@@ -838,10 +838,10 @@ img {
   access
 
 ---------------------------------*/
-.access {
+.top .access {
   padding: 7rem 0;
 }
-.access__inner {
+.top .access__inner {
   width: min(1200px, 90%);
   margin: 0 auto;
 }
@@ -1717,6 +1717,11 @@ img {
   top: 2%;
   left: 2%;
 }
+@media screen and (max-width: 480px) {
+  .osteoporosis .sec_3 .items .item::before {
+    width: 95px;
+  }
+}
 .osteoporosis .sec_3 .items .item:nth-child(1)::before {
   background-image: url(../img/osteoporosis/osteoporosis_item1_bg.png);
 }
@@ -1725,4 +1730,182 @@ img {
 }
 .osteoporosis .sec_3 .items .item:nth-child(3)::before {
   background-image: url(../img/osteoporosis/osteoporosis_item3_bg.png);
+}
+
+/*---------------------------------
+
+  アクセス
+
+---------------------------------*/
+.access .sub_mv {
+  background-image: url(../img/access/access_mv.png);
+}
+.access .access_map {
+  width: min(1200px, 90%);
+  margin: 16rem auto 3rem;
+}
+@media screen and (max-width: 480px) {
+  .access .access_map {
+    margin: 6rem auto 3rem;
+  }
+}
+.access .access_map p {
+  font-size: 2.4rem;
+  margin: 2rem 0;
+}
+@media screen and (max-width: 480px) {
+  .access .access_map p {
+    font-size: 1.6rem;
+  }
+}
+.access .items {
+  width: min(1200px, 90%);
+  margin: 0 auto 6rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 480px) {
+  .access .items {
+    margin: 0 auto 3rem;
+  }
+}
+.access .items .item {
+  width: 30%;
+  border: 2px solid #00AE6E;
+}
+@media screen and (max-width: 1024px) {
+  .access .items .item {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+}
+.access .items .item .icon_wrap {
+  background-color: #00AE6E;
+  position: relative;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0;
+  margin-bottom: 3rem;
+}
+.access .items .item .icon_wrap::after {
+  content: " ";
+  background-image: url(../img/access/arrow.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 30px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -26px;
+}
+.access .items .item .icon_wrap img {
+  width: auto;
+  height: 36px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 480px) {
+  .access .items .item .icon_wrap img {
+    height: 26px;
+  }
+}
+.access .items .item .icon_wrap p {
+  font-size: 2rem;
+}
+.access .items .item > p {
+  padding: 1rem;
+  font-size: 1.6rem;
+}
+.access .items .item > span {
+  color: #00AE6E;
+  display: block;
+  padding: 1rem;
+}
+.access .access_time_list {
+  width: min(1200px, 90%);
+  margin: 3rem auto 10rem;
+  padding: 6rem 3rem;
+  background-color: rgba(0, 174, 110, 0.2);
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1024px) {
+  .access .access_time_list {
+    padding: 3rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .access .access_time_list {
+    padding: 1.2rem;
+  }
+}
+.access .access_time_list img {
+  width: 42%;
+}
+@media screen and (max-width: 1024px) {
+  .access .access_time_list img {
+    width: 100%;
+    height: 48rem;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 480px) {
+  .access .access_time_list img {
+    height: 30rem;
+  }
+}
+.access .access_time_list > div {
+  width: 50%;
+}
+@media screen and (max-width: 1024px) {
+  .access .access_time_list > div {
+    width: 100%;
+  }
+}
+.access .access_time_list .time_list {
+  border-collapse: collapse;
+  letter-spacing: 0.1em;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+@media screen and (max-width: 1024px) {
+  .access .access_time_list .time_list {
+    font-size: 1.6rem;
+    margin: 2rem auto;
+  }
+}
+.access .access_time_list .time_list tr th {
+  width: 180px;
+  text-align: left;
+  font-weight: normal;
+}
+@media screen and (max-width: 480px) {
+  .access .access_time_list .time_list tr th {
+    width: 110px;
+  }
+}
+.access .access_time_list .time_list tr td {
+  padding: 1rem 2.2rem;
+}
+@media screen and (max-width: 1024px) {
+  .access .access_time_list .time_list tr td {
+    padding: 0.6rem;
+  }
+}
+.access .access_time_list .time_list tr:not(:last-child) {
+  border-bottom: 1px solid #00AE6E;
+}
+.access .access_time_list .time_list tr:nth-child(2) td, .access .access_time_list .time_list tr:nth-child(3) td {
+  color: #00AE6E;
+}
+.access .access_time_list .note {
+  margin-bottom: 3rem;
+}
+@media screen and (max-width: 1024px) {
+  .access .access_time_list .note {
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.css.map */

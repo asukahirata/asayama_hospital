@@ -168,6 +168,9 @@
           background-repeat: no-repeat;
           top: 2%;
           left: 2%;
+          @include common.mq('sp') {
+            width: 95px;
+          }
         }
         &:nth-child(1) {
           &::before {

@@ -1,0 +1,158 @@
+@use "common";
+
+/*---------------------------------
+
+  アクセス
+
+---------------------------------*/
+.access {
+  .sub_mv { 
+    background-image: url(../img/access/access_mv.png);
+  }
+  .access_map {
+    width: min(1200px, 90%);
+    margin: 16rem auto 3rem;
+    @include common.mq('sp') {
+      margin: 6rem auto 3rem;
+    }
+    p {
+      font-size: 2.4rem;
+      margin: 2rem 0;
+      @include common.mq('sp') {
+        font-size: 1.6rem;
+      }
+    }
+  }
+  .items {
+    width: min(1200px, 90%);
+    margin: 0 auto 6rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include common.mq('sp') {
+      margin: 0 auto 3rem;
+    }
+    .item {
+      width: 30%;
+      border: 2px solid common.$main_color;
+      @include common.mq('tab') {
+        width: 100%;
+        margin-bottom: 3rem;
+      }
+      .icon_wrap {
+        background-color: common.$main_color;
+        position: relative;
+        color: #fff;
+        text-align: center;
+        padding: 2rem 0;
+        margin-bottom: 3rem;
+        &::after {
+          content: " ";
+          background-image: url(../img/access/arrow.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+          width: 20px;
+          height: 30px;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: -26px;
+        }
+        img {
+          width: auto;
+          height: 36px;
+          margin: 0 auto;
+          @include common.mq('sp') {
+            height: 26px;
+          }
+        }
+        p {
+          font-size: 2rem;
+        }
+      }
+      > p {
+        padding: 1rem;
+        font-size: 1.6rem;
+      }
+      > span {
+        color: common.$main_color;
+        display: block;
+        padding: 1rem;
+      }
+    }
+  }
+  .access_time_list {
+    width: min(1200px, 90%);
+    margin: 3rem auto 10rem;
+    padding: 6rem 3rem;
+    background-color: rgba(common.$main_color, .2);
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include common.mq('tab') {
+      padding: 3rem;
+    }
+    @include common.mq('sp') {
+      padding: 1.2rem;
+    }
+    img {
+      width: 42%;
+      @include common.mq('tab') {
+        width: 100%;
+        height: 48rem;
+        object-fit: cover;
+      }
+      @include common.mq('sp') {
+        height: 30rem;
+      }
+    }
+    > div {
+      width: 50%;
+      @include common.mq('tab') {
+        width: 100%;
+      }
+    }
+    .time_list {
+      border-collapse: collapse;
+      letter-spacing: 0.1em;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      @include common.mq('tab') {
+        font-size: 1.6rem;
+        margin: 2rem auto;
+      }
+      tr {
+        th {
+          width: 180px;
+          text-align: left;
+          font-weight: normal;
+          @include common.mq('sp') {
+            width: 110px;
+          }
+        }
+        td {
+          padding: 1rem 2.2rem;
+          @include common.mq('tab') {
+            padding: .6rem;
+          }
+        }
+        &:not(:last-child) {
+          border-bottom: 1px solid common.$main_color;
+        }
+        &:nth-child(2),
+        &:nth-child(3) {
+          td {
+            color: common.$main_color;
+          }
+        }
+      }
+    }
+    .note {
+      margin-bottom: 3rem;
+      @include common.mq('tab') {
+        text-align: center;
+      }
+    }
+  }
+}

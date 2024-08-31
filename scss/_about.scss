@@ -12,7 +12,7 @@
   .about_text {
     padding: 14rem 0 30rem;
     position: relative;
-    @include common.mq('tab') {
+    @media screen and (max-width: 1230px) {
       display: flex;
       flex-direction: column-reverse;
       padding: 7rem 0 3rem;
@@ -22,7 +22,7 @@
       left: 0;
       top: 16%;
       width: 57%;
-      @include common.mq('tab') {
+      @media screen and (max-width: 1230px) {
         position: relative;
         width: 80%;
       }

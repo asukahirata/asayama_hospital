@@ -953,7 +953,7 @@ img {
   padding: 14rem 0 30rem;
   position: relative;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1230px) {
   .about .about_text {
     display: flex;
     flex-direction: column-reverse;
@@ -966,7 +966,7 @@ img {
   top: 16%;
   width: 57%;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1230px) {
   .about .about_text > img {
     position: relative;
     width: 80%;

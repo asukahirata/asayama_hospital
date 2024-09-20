@@ -485,9 +485,11 @@ img {
 ---------------------------------*/
 .mv {
   position: relative;
+  height: min(800px, 100vh);
 }
 .mv__text {
   position: absolute;
+  z-index: 3;
   left: 0;
   bottom: 100px;
   background-color: rgba(0, 174, 110, 0.7);
@@ -941,6 +943,29 @@ img {
   letter-spacing: 0.08em;
 }
 
+/*---------------------------------
+
+  スライダー
+
+---------------------------------*/
+.slick-slide img {
+  width: 100%;
+  height: min(800px, 100vh);
+  object-fit: cover;
+}
+
+.slide-animation {
+  animation: fadezoom 8s 0s forwards;
+}
+
+@keyframes fadezoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
 /*---------------------------------
 
   当院について

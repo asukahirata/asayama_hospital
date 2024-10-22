@@ -721,12 +721,28 @@ img {
 .information__inner dl div {
   border-bottom: 1px solid #00AE6E;
   margin-bottom: 3rem;
-  padding-bottom: 1rem;
+  padding-bottom: 3rem;
 }
 @media screen and (max-width: 480px) {
   .information__inner dl div {
     font-size: 1.4rem;
   }
+}
+.information__inner dl div dt {
+  font-size: 1.4rem;
+  letter-spacing: 0.1em;
+  color: #717171;
+}
+.information__inner dl div dd {
+  font-size: 1.6rem;
+}
+.information__inner dl div dd .title {
+  margin-bottom: 0.8rem;
+  font-size: 1.8rem;
+  color: #00AE6E;
+}
+.information__inner dl div dd span {
+  text-decoration: underline;
 }
 
 /*---------------------------------

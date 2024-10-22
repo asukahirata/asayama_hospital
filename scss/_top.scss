@@ -311,9 +311,25 @@ img {
       div {
         border-bottom: 1px solid common.$main_color;
         margin-bottom: 3rem;
-        padding-bottom: 1rem;
+        padding-bottom: 3rem;
         @include common.mq('sp') {
           font-size: 1.4rem;
+        }
+        dt {
+          font-size: 1.4rem;
+          letter-spacing: 0.1em;
+          color: #717171;
+        }
+        dd {
+          font-size: 1.6rem;
+          .title {
+            margin-bottom: .8rem;
+            font-size: 1.8rem;
+            color: common.$main_color;
+          }
+          span {
+            text-decoration: underline;
+          }
         }
       }
     }

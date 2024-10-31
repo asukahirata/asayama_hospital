@@ -114,7 +114,7 @@ img {
 ---------------------------------*/
 .mv {
   position: relative;
-  height: min(800px, 100vh);
+  /* height: min(800px, 100vh); */
   &__text {
     position: absolute;
     z-index: 3;

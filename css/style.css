@@ -918,6 +918,7 @@ img {
 }
 .time_list_wrap .time_list tr td {
   padding: 1rem 2.2rem;
+  text-align: center;
 }
 @media screen and (max-width: 1024px) {
   .time_list_wrap .time_list tr td {
@@ -1930,6 +1931,7 @@ img {
 }
 .access .access_time_list .time_list tr td {
   padding: 1rem 2.2rem;
+  text-align: center;
 }
 @media screen and (max-width: 1024px) {
   .access .access_time_list .time_list tr td {

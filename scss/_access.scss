@@ -133,6 +133,7 @@
         }
         td {
           padding: 1rem 2.2rem;
+          text-align: center;
           @include common.mq('tab') {
             padding: .6rem;
           }

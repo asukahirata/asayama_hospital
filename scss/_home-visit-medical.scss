@@ -1,0 +1,362 @@
+@use "common";
+
+/*---------------------------------
+
+  訪問診療
+
+---------------------------------*/
+.home-visit-medical {
+  .sub_mv { 
+    background-image: url(../img/home-visit-medical/home_mv.png);
+  }
+  .sec_1 {
+    width: min(1200px, 90%);
+    margin: 12rem auto;
+    @include common.mq('tab') {
+      margin: 6rem auto;
+    }
+    .top_text {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 6rem;
+      .text_wrap {
+        width: calc(100% - (340px + 6rem));
+        @include common.mq('tab') {
+          width: 100%;
+          margin-bottom: 3rem;
+        }
+        .title {
+          color: common.$main_color;
+          font-size: 3.6rem;
+          font-weight: 500;
+          margin-bottom: 5rem;
+          @include common.mq('tab') {
+            font-size: 2.6rem;
+          }
+          @include common.mq('sp') {
+            font-size: 1.8rem;
+            margin-bottom: 3rem;
+          }
+        }
+        .text {
+          font-size: 2rem;
+          line-height: 2;
+          @include common.mq('tab') {
+            font-size: 1.6rem;
+          }
+        }
+      }
+      img {
+        width: 340px;
+        margin-left: 6rem;
+        @include common.mq('tab') {
+          width: min(100%, 500px);
+          margin-left: 0;
+        }
+      }
+    }
+    .list {
+      width: min(900px, 94%);
+      margin: 0 auto 8rem;
+      p {
+        color: #fff;
+        padding: 6px 7rem;
+        font-size: 1.8rem;
+        font-weight: 700;
+        background-color: common.$main_color;
+        width: max-content;
+        margin: 0 auto -2rem;
+        border-radius: 5px;
+        @include common.mq('tab') {
+          padding: 6px 2rem;
+        }
+      }
+      ul {
+        background-color: rgba(0, 174, 110, 0.2);
+        padding: 5rem 5rem 4rem 5rem;
+        @include common.mq('tab') {
+          padding: 5rem 3rem 4rem 3rem;
+        }
+        li {
+          margin-bottom: 2rem;
+          font-size: 2rem;
+          position: relative;
+          padding-left: 40px;
+          &::before {
+            content: " ";
+            position: absolute;
+            left: 0;
+            top: 5px;
+            background-image: url(../img/home-visit-medical/check_icon.svg);
+            width: 30px;
+            height: 30px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            @include common.mq('tab') {
+              width: 20px;
+              height: 20px;
+            }
+          }
+          @include common.mq('tab') {
+            font-size: 1.6rem;
+            padding-left: 26px;
+          }
+        }
+      }
+    }
+    .circle {
+      > p {
+        text-align: center;
+        font-size: 2.4rem;
+        margin-bottom: 4rem;
+        @include common.mq('tab') {
+          font-size: 2rem;
+        }
+        @include common.mq('sp') {
+          font-size: 1.8rem;
+        }
+        span {
+          text-decoration-line: underline;
+          text-decoration-thickness: 16px;
+          text-underline-offset: -5px;
+          text-decoration-color: rgba(0, 174, 110, 0.4);
+          @include common.mq('sp') {
+            text-decoration-thickness: 10px;
+          }
+        }
+      }
+      .items {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        p {
+          height: 136px;
+          width: 136px;
+          text-align: center;
+          margin: 0 2rem;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: common.$main_color;
+          color: #fff;
+          font-size: 1.8rem;
+          font-weight: 600;
+          @include common.mq('tab') {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+          }
+          @include common.mq('sp') {
+            height: 80px;
+            width: 80px;
+            margin: 0 1rem;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+  .sec_2 {
+    background-color: #FAFAFA;
+    padding: 6rem 0;
+    .inner {
+      width: min(1200px, 90%);
+      margin: 0 auto;
+      > .title {
+        text-align: center;
+        font-weight: 700;
+        font-size: 3rem;
+        margin-bottom: 6rem;
+        color: common.$main_color;
+        @include common.mq('sp') {
+          font-size: 2.4rem;
+        }
+      }
+      > .text {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 6rem;
+        @include common.mq('sp') {
+          font-size: 1.6rem;
+        }
+      }
+    }
+    .items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+      .item {
+        background-color: #fff;
+        padding: 4rem;
+        width: 48%;
+        @include common.mq('tab') {
+          width: 100%;
+          margin-bottom: 1rem;
+          padding: 2rem;
+        }
+        .title {
+          color: common.$main_color;
+          font-size: 2.4rem;
+          letter-spacing: 0.1em;
+          margin-bottom: 2rem;
+          @include common.mq('sp') {
+            font-size: 1.8rem;
+          }
+        }
+        .text {
+          font-size: 2rem;
+          @include common.mq('sp') {
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+    .note {
+      font-size: 2rem;
+      @include common.mq('sp') {
+        font-size: 1.6rem;
+      }
+    }
+  }
+  .sec_3 {
+    width: min(900px, 90%);
+    margin: 0 auto;
+    padding: 6rem 0;
+    > .title {
+      text-align: center;
+      font-weight: 700;
+      font-size: 3rem;
+      margin-bottom: 6rem;
+      color: common.$main_color;
+      @include common.mq('sp') {
+        font-size: 2.4rem;
+      }
+    }
+    > .text {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 6rem;
+      @include common.mq('sp') {
+        font-size: 1.6rem;
+      }
+    }
+    .item {
+      margin-bottom: 2rem;
+      .title {
+        color: #fff;
+        padding: 6px 2rem;
+        font-size: 1.8rem;
+        font-weight: 700;
+        background-color: common.$main_color;
+        width: max-content;
+        margin: 0 auto -2rem;
+        border-radius: 5px;
+        @include common.mq('sp') {
+          padding: 6px 1rem;
+          font-size: 1.6rem;
+        }
+      }
+      .text {
+        background-color: rgba(0, 174, 110, 0.2);
+        padding: 5rem 7rem 4rem 7rem;
+        text-align: center;
+        font-size: 2rem;
+        @include common.mq('sp') {
+          font-size: 1.6rem;
+          padding: 5rem 2rem 4rem 2rem;
+        }
+      }
+    }
+    .note {
+      font-size: 2rem;
+      @include common.mq('sp') {
+        font-size: 1.6rem;
+      }
+    }
+  }
+  .sec_4 {
+    background-color: #FAFAFA;
+    padding: 6rem 0;
+    > .title {
+      text-align: center;
+      font-weight: 700;
+      font-size: 3rem;
+      margin-bottom: 6rem;
+      color: common.$main_color;
+      @include common.mq('sp') {
+        font-size: 2.4rem;
+      }
+    }
+    .items {
+      width: min(1200px, 90%);
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .item {
+        width: 20%;
+        background-color: #fff;
+        padding: 2rem;
+        position: relative;
+        .title {
+          display: flex;
+          flex-direction: column;
+          color: common.$main_color;
+          text-align: center;
+          font-size: 2.4rem;
+          font-weight: 700;
+          margin-bottom: 1rem;
+          padding-bottom: 1rem;
+          border-bottom: 1px solid common.$main_color;
+          span {
+            font-size: 4rem;
+            @include common.mq('sp') {
+              font-size: 3rem;
+            }
+          }
+          @include common.mq('sp') {
+            font-size: 1.8rem;
+          }
+        }
+        .text {
+          font-size: 2rem;
+          a {
+            text-decoration: underline;
+          }
+          @include common.mq('sp') {
+            font-size: 1.6rem;
+          }
+        }
+        &:not(:last-child) {
+          &::after {
+            content: " ";
+            position: absolute;
+            right: -20%;
+            top: 50%;
+            background-image: url(../img/home-visit-medical/arrow.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 20px;
+            height: 20px;
+          }
+        }
+        @include common.mq('tab') {
+          width: 100%;
+          margin-bottom: 5rem;
+          &:not(:last-child) {
+            &::after {
+              right: 48%;
+              bottom: -13%;
+              top: inherit;
+              transform: rotate(90deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}

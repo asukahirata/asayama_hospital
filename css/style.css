@@ -2371,4 +2371,175 @@ img {
     top: inherit;
     transform: rotate(90deg);
   }
+}
+
+/*---------------------------------
+
+  訪問診療
+
+---------------------------------*/
+.vaccination .sub_mv {
+  background-image: url(../img/vaccination/vaccination_img.png);
+}
+.vaccination .sec_1 {
+  width: min(1200px, 90%);
+  margin: 12rem auto;
+}
+@media screen and (max-width: 1024px) {
+  .vaccination .sec_1 {
+    margin: 6rem auto;
+  }
+}
+.vaccination .sec_1 > .title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 6rem;
+  color: #00AE6E;
+}
+@media screen and (max-width: 480px) {
+  .vaccination .sec_1 > .title {
+    font-size: 2.4rem;
+  }
+}
+.vaccination .sec_1 > .text {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 6rem;
+}
+@media screen and (max-width: 480px) {
+  .vaccination .sec_1 > .text {
+    font-size: 1.6rem;
+  }
+}
+.vaccination .sec_1 .list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.vaccination .sec_1 .list ul {
+  width: 40%;
+}
+@media screen and (max-width: 1024px) {
+  .vaccination .sec_1 .list ul {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+.vaccination .sec_1 .list ul li {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+}
+.vaccination .sec_1 .list ul li::before {
+  content: "◎";
+  color: #00AE6E;
+  margin-right: 1.5rem;
+}
+@media screen and (max-width: 480px) {
+  .vaccination .sec_1 .list ul li {
+    font-size: 1.6rem;
+  }
+}
+.vaccination .sec_1 .list img {
+  width: calc(100% - (40% + 3rem));
+}
+@media screen and (max-width: 1024px) {
+  .vaccination .sec_1 .list img {
+    width: 100%;
+  }
+}
+.vaccination .sec_2 {
+  background-color: #FAFAFA;
+  padding: 6rem 0;
+}
+.vaccination .sec_2 .inner {
+  width: min(1200px, 90%);
+  margin: 0 auto;
+}
+.vaccination .sec_2 .inner > .title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 6rem;
+  color: #00AE6E;
+}
+@media screen and (max-width: 480px) {
+  .vaccination .sec_2 .inner > .title {
+    font-size: 2.4rem;
+  }
+}
+.vaccination .sec_2 .inner > .text {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 6rem;
+}
+@media screen and (max-width: 480px) {
+  .vaccination .sec_2 .inner > .text {
+    font-size: 1.6rem;
+  }
+}
+.vaccination .sec_2 .inner .list_wrap {
+  background-color: #fff;
+  padding: 7rem 10rem;
+}
+@media screen and (max-width: 1024px) {
+  .vaccination .sec_2 .inner .list_wrap {
+    padding: 3rem;
+  }
+}
+.vaccination .sec_2 .inner dl {
+  margin-bottom: 2rem;
+}
+.vaccination .sec_2 .inner dl div {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 2rem;
+  border-top: 1px solid #C4C4C4;
+}
+.vaccination .sec_2 .inner dl div:last-child {
+  border-bottom: 1px solid #C4C4C4;
+}
+@media screen and (max-width: 480px) {
+  .vaccination .sec_2 .inner dl div {
+    font-size: 1.6rem;
+  }
+}
+.vaccination .sec_2 .inner dl dt, .vaccination .sec_2 .inner dl dd {
+  padding: 1.6rem 2rem;
+}
+@media screen and (max-width: 1024px) {
+  .vaccination .sec_2 .inner dl dt, .vaccination .sec_2 .inner dl dd {
+    padding: 1rem 2rem;
+  }
+}
+.vaccination .sec_2 .inner dl dt {
+  background-color: rgba(0, 174, 110, 0.08);
+  width: 26%;
+}
+@media screen and (max-width: 1024px) {
+  .vaccination .sec_2 .inner dl dt {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .vaccination .sec_2 .inner dl dt {
+    width: 100%;
+  }
+}
+.vaccination .sec_2 .inner .note {
+  font-size: 2rem;
+}
+@media screen and (max-width: 480px) {
+  .vaccination .sec_2 .inner .note {
+    font-size: 1.6rem;
+  }
+}
+.vaccination .sec_2 .inner .note a {
+  text-decoration: underline;
+}
+@media screen and (max-width: 480px) {
+  .vaccination .sec_2 .inner .note a {
+    display: block;
+  }
 }/*# sourceMappingURL=style.css.map */

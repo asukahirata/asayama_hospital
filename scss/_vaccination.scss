@@ -1,0 +1,144 @@
+@use "common";
+
+/*---------------------------------
+
+  訪問診療
+
+---------------------------------*/
+.vaccination {
+  .sub_mv { 
+    background-image: url(../img/vaccination/vaccination_img.png);
+  }
+  .sec_1 {
+    width: min(1200px, 90%);
+    margin: 12rem auto;
+    @include common.mq('tab') {
+      margin: 6rem auto;
+    }
+    > .title {
+      text-align: center;
+      font-weight: 700;
+      font-size: 3rem;
+      margin-bottom: 6rem;
+      color: common.$main_color;
+      @include common.mq('sp') {
+        font-size: 2.4rem;
+      }
+    }
+    > .text {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 6rem;
+      @include common.mq('sp') {
+        font-size: 1.6rem;
+      }
+    }
+    .list {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      ul {
+        width: 40%;
+        @include common.mq('tab') {
+          width: 100%;
+          margin-bottom: 2rem;
+        }
+        li {
+          font-size: 2rem;
+          margin-bottom: 2rem;
+          display: flex;
+          &::before {
+            content: "◎";
+            color: common.$main_color;
+            margin-right: 1.5rem;
+          }
+          @include common.mq('sp') {
+            font-size: 1.6rem;
+          }
+        }
+      }
+      img {
+        width: calc(100% - (40% + 3rem));
+        @include common.mq('tab') {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .sec_2 {
+    background-color: #FAFAFA;
+    padding: 6rem 0;
+    .inner {
+      width: min(1200px, 90%);
+      margin: 0 auto;
+      > .title {
+        text-align: center;
+        font-weight: 700;
+        font-size: 3rem;
+        margin-bottom: 6rem;
+        color: common.$main_color;
+        @include common.mq('sp') {
+          font-size: 2.4rem;
+        }
+      }
+      > .text {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 6rem;
+        @include common.mq('sp') {
+          font-size: 1.6rem;
+        }
+      }
+      .list_wrap {
+        background-color: #fff;
+        padding: 7rem 10rem;
+        @include common.mq('tab') {
+          padding: 3rem;
+        }
+      }
+      dl {
+        margin-bottom: 2rem;
+        div {
+          display: flex;
+          flex-wrap: wrap;
+          font-size: 2rem;
+          border-top: 1px solid #C4C4C4;
+          &:last-child {
+            border-bottom: 1px solid #C4C4C4;
+          }
+          @include common.mq('sp') {
+            font-size: 1.6rem;
+          }
+        }
+        dt, dd {
+          padding: 1.6rem 2rem;
+          @include common.mq('tab') {
+            padding: 1rem 2rem;
+          }
+        }
+        dt {
+          background-color: rgba(0, 174, 110, 0.08);
+          width: 26%;
+          @include common.mq('tab') {
+            width: 40%;
+          }
+          @include common.mq('sp') {
+            width: 100%;
+          }
+        }
+      }
+      .note {
+        font-size: 2rem;
+        @include common.mq('sp') {
+          font-size: 1.6rem;
+        }
+        a {
+          text-decoration: underline;
+          @include common.mq('sp') {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

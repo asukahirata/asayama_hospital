@@ -44,6 +44,11 @@
       text-align: center;
       padding: 5rem 4rem;
       margin-bottom: 10rem;
+      @include common.mq('sp') {
+        font-size: 1.6rem;
+        text-align: left;
+        padding: 3rem 2rem;
+      }
     }
     .line_btn {
       a {
@@ -59,6 +64,10 @@
         position: relative;
         border-radius: 50px;
         margin: 0px auto 2rem;
+        @include common.mq('sp') {
+          font-size: 1.6rem;
+          height: 5rem;
+        }
         &::after {
           content: " ";
           background-image: url(../img/top/btn_arrow_wh.svg);
@@ -74,6 +83,10 @@
         color: #FA4141;
         font-size: 2rem;
         display: block;
+        @include common.mq('sp') {
+          font-size: 1.6rem;
+          text-align: left;
+        }
       }
     }
   }
@@ -123,9 +136,6 @@
         background-color: rgba(0, 174, 110, 0.08);
         width: 26%;
         @include common.mq('tab') {
-          width: 40%;
-        }
-        @include common.mq('sp') {
           width: 100%;
         }
       }
@@ -150,6 +160,9 @@
     .list_wrap {
       background-color: #FAFAFA;
       padding: 6rem;
+      @include common.mq('sp') {
+        padding: 3rem;
+      }
     }
     dl {
       dt {
@@ -160,6 +173,9 @@
         span {
           text-decoration: underline;
         }
+        @include common.mq('sp') {
+          font-size: 1.6rem;
+        }
       }
       dd {
         font-size: 1.8rem;
@@ -169,12 +185,15 @@
         span {
           font-weight: 700;
         }
+        @include common.mq('sp') {
+          font-size: 1.6rem;
+        }
       }
     }
   }
   .sec_4 {
     background-color: #FAFAFA;
-    padding: 6rem 0;
+    padding: 6rem 0 10rem;
     > .title {
       text-align: center;
       font-weight: 700;
@@ -187,7 +206,7 @@
     }
     .items {
       width: min(1200px, 90%);
-      margin: 12rem auto;
+      margin: 0 auto;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -227,17 +246,26 @@
       width: min(1200px, 90%);
       margin: 0 auto;
       background-color: #fff;
-      padding: 7rem 0;
+      padding: 7rem 2rem;
       text-align: center;
+      @include common.mq('sp') {
+        padding: 3rem 2rem;
+      }
       > .title {
         font-size: 2.2rem;
         margin-bottom: 3rem;
         color: #FA4141;
         font-weight: 500;
+        @include common.mq('sp') {
+          font-size: 1.8rem;
+        }
       }
       > .text {
         font-size: 1.8rem;
         margin-bottom: 3rem;
+        @include common.mq('sp') {
+          font-size: 1.6rem;
+        }
       }
       a {
         background-color: rgb(0, 174, 110);
@@ -260,6 +288,10 @@
           right: 20px;
           width: 20px;
           height: 20px;
+        }
+        @include common.mq('sp') {
+          font-size: 1.6rem;
+          height: 5rem;
         }
       }
     }

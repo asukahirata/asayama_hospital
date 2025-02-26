@@ -2595,6 +2595,13 @@ img {
   padding: 5rem 4rem;
   margin-bottom: 10rem;
 }
+@media screen and (max-width: 480px) {
+  .reservation .sec_1 .note {
+    font-size: 1.6rem;
+    text-align: left;
+    padding: 3rem 2rem;
+  }
+}
 .reservation .sec_1 .line_btn a {
   background-color: rgb(0, 174, 110);
   height: 7rem;
@@ -2608,6 +2615,12 @@ img {
   position: relative;
   border-radius: 50px;
   margin: 0px auto 2rem;
+}
+@media screen and (max-width: 480px) {
+  .reservation .sec_1 .line_btn a {
+    font-size: 1.6rem;
+    height: 5rem;
+  }
 }
 .reservation .sec_1 .line_btn a::after {
   content: " ";
@@ -2623,6 +2636,12 @@ img {
   color: #FA4141;
   font-size: 2rem;
   display: block;
+}
+@media screen and (max-width: 480px) {
+  .reservation .sec_1 .line_btn span {
+    font-size: 1.6rem;
+    text-align: left;
+  }
 }
 .reservation .sec_2 {
   background-color: #FAFAFA;
@@ -2682,11 +2701,6 @@ img {
 }
 @media screen and (max-width: 1024px) {
   .reservation .sec_2 dl dt {
-    width: 40%;
-  }
-}
-@media screen and (max-width: 480px) {
-  .reservation .sec_2 dl dt {
     width: 100%;
   }
 }
@@ -2715,6 +2729,11 @@ img {
   background-color: #FAFAFA;
   padding: 6rem;
 }
+@media screen and (max-width: 480px) {
+  .reservation .sec_3 .list_wrap {
+    padding: 3rem;
+  }
+}
 .reservation .sec_3 dl dt {
   color: #00AE6E;
   font-size: 2rem;
@@ -2723,6 +2742,11 @@ img {
 }
 .reservation .sec_3 dl dt span {
   text-decoration: underline;
+}
+@media screen and (max-width: 480px) {
+  .reservation .sec_3 dl dt {
+    font-size: 1.6rem;
+  }
 }
 .reservation .sec_3 dl dd {
   font-size: 1.8rem;
@@ -2733,9 +2757,14 @@ img {
 .reservation .sec_3 dl dd span {
   font-weight: 700;
 }
+@media screen and (max-width: 480px) {
+  .reservation .sec_3 dl dd {
+    font-size: 1.6rem;
+  }
+}
 .reservation .sec_4 {
   background-color: #FAFAFA;
-  padding: 6rem 0;
+  padding: 6rem 0 10rem;
 }
 .reservation .sec_4 > .title {
   text-align: center;
@@ -2751,7 +2780,7 @@ img {
 }
 .reservation .sec_4 .items {
   width: min(1200px, 90%);
-  margin: 12rem auto;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -2797,8 +2826,13 @@ img {
   width: min(1200px, 90%);
   margin: 0 auto;
   background-color: #fff;
-  padding: 7rem 0;
+  padding: 7rem 2rem;
   text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .reservation .line_btn_wrap .inner {
+    padding: 3rem 2rem;
+  }
 }
 .reservation .line_btn_wrap .inner > .title {
   font-size: 2.2rem;
@@ -2806,9 +2840,19 @@ img {
   color: #FA4141;
   font-weight: 500;
 }
+@media screen and (max-width: 480px) {
+  .reservation .line_btn_wrap .inner > .title {
+    font-size: 1.8rem;
+  }
+}
 .reservation .line_btn_wrap .inner > .text {
   font-size: 1.8rem;
   margin-bottom: 3rem;
+}
+@media screen and (max-width: 480px) {
+  .reservation .line_btn_wrap .inner > .text {
+    font-size: 1.6rem;
+  }
 }
 .reservation .line_btn_wrap .inner a {
   background-color: rgb(0, 174, 110);
@@ -2832,4 +2876,10 @@ img {
   right: 20px;
   width: 20px;
   height: 20px;
+}
+@media screen and (max-width: 480px) {
+  .reservation .line_btn_wrap .inner a {
+    font-size: 1.6rem;
+    height: 5rem;
+  }
 }/*# sourceMappingURL=style.css.map */

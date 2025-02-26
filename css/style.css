@@ -2548,4 +2548,288 @@ img {
 
   予約について
 
----------------------------------*//*# sourceMappingURL=style.css.map */
+---------------------------------*/
+.reservation .sub_mv {
+  background-image: url(../img/reservation/reservation_mv.png);
+}
+.reservation .sec_1 {
+  width: min(1200px, 90%);
+  margin: 12rem auto;
+}
+@media screen and (max-width: 1024px) {
+  .reservation .sec_1 {
+    margin: 6rem auto;
+  }
+}
+.reservation .sec_1 > .title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 6rem;
+  color: #00AE6E;
+}
+@media screen and (max-width: 480px) {
+  .reservation .sec_1 > .title {
+    font-size: 2.4rem;
+  }
+}
+.reservation .sec_1 > .text {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 6rem;
+}
+.reservation .sec_1 > .text span {
+  font-weight: 700;
+}
+@media screen and (max-width: 480px) {
+  .reservation .sec_1 > .text {
+    font-size: 1.6rem;
+  }
+}
+.reservation .sec_1 .note {
+  color: #FA4141;
+  font-weight: 700;
+  background-color: rgba(250, 65, 65, 0.1);
+  font-size: 2rem;
+  text-align: center;
+  padding: 5rem 4rem;
+  margin-bottom: 10rem;
+}
+.reservation .sec_1 .line_btn a {
+  background-color: rgb(0, 174, 110);
+  height: 7rem;
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  width: min(90%, 470px);
+  position: relative;
+  border-radius: 50px;
+  margin: 0px auto 2rem;
+}
+.reservation .sec_1 .line_btn a::after {
+  content: " ";
+  background-image: url(../img/top/btn_arrow_wh.svg);
+  background-size: cover;
+  position: absolute;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+}
+.reservation .sec_1 .line_btn span {
+  text-align: center;
+  color: #FA4141;
+  font-size: 2rem;
+  display: block;
+}
+.reservation .sec_2 {
+  background-color: #FAFAFA;
+  padding: 6rem 0;
+}
+.reservation .sec_2 > .title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 6rem;
+  color: #00AE6E;
+}
+@media screen and (max-width: 480px) {
+  .reservation .sec_2 > .title {
+    font-size: 2.4rem;
+  }
+}
+.reservation .sec_2 .list_wrap {
+  width: min(1200px, 90%);
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 7rem 10rem;
+}
+@media screen and (max-width: 1024px) {
+  .reservation .sec_2 .list_wrap {
+    padding: 3rem;
+  }
+}
+.reservation .sec_2 dl {
+  margin-bottom: 2rem;
+}
+.reservation .sec_2 dl div {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 2rem;
+  border-top: 1px solid #C4C4C4;
+}
+.reservation .sec_2 dl div:last-child {
+  border-bottom: 1px solid #C4C4C4;
+}
+@media screen and (max-width: 480px) {
+  .reservation .sec_2 dl div {
+    font-size: 1.6rem;
+  }
+}
+.reservation .sec_2 dl dt, .reservation .sec_2 dl dd {
+  padding: 1.6rem 2rem;
+}
+@media screen and (max-width: 1024px) {
+  .reservation .sec_2 dl dt, .reservation .sec_2 dl dd {
+    padding: 1rem 2rem;
+  }
+}
+.reservation .sec_2 dl dt {
+  background-color: rgba(0, 174, 110, 0.08);
+  width: 26%;
+}
+@media screen and (max-width: 1024px) {
+  .reservation .sec_2 dl dt {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .reservation .sec_2 dl dt {
+    width: 100%;
+  }
+}
+.reservation .sec_3 {
+  width: min(1200px, 90%);
+  margin: 12rem auto;
+}
+@media screen and (max-width: 1024px) {
+  .reservation .sec_3 {
+    margin: 6rem auto;
+  }
+}
+.reservation .sec_3 > .title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 6rem;
+  color: #00AE6E;
+}
+@media screen and (max-width: 480px) {
+  .reservation .sec_3 > .title {
+    font-size: 2.4rem;
+  }
+}
+.reservation .sec_3 .list_wrap {
+  background-color: #FAFAFA;
+  padding: 6rem;
+}
+.reservation .sec_3 dl dt {
+  color: #00AE6E;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+.reservation .sec_3 dl dt span {
+  text-decoration: underline;
+}
+.reservation .sec_3 dl dd {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #C4C4C4;
+}
+.reservation .sec_3 dl dd span {
+  font-weight: 700;
+}
+.reservation .sec_4 {
+  background-color: #FAFAFA;
+  padding: 6rem 0;
+}
+.reservation .sec_4 > .title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 6rem;
+  color: #00AE6E;
+}
+@media screen and (max-width: 480px) {
+  .reservation .sec_4 > .title {
+    font-size: 2.4rem;
+  }
+}
+.reservation .sec_4 .items {
+  width: min(1200px, 90%);
+  margin: 12rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.reservation .sec_4 .items .item {
+  background-color: #fff;
+  padding: 4rem;
+  width: 48%;
+}
+@media screen and (max-width: 1024px) {
+  .reservation .sec_4 .items .item {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 2rem;
+  }
+}
+.reservation .sec_4 .items .item .title {
+  color: #00AE6E;
+  font-size: 2.4rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+@media screen and (max-width: 480px) {
+  .reservation .sec_4 .items .item .title {
+    font-size: 1.8rem;
+  }
+}
+.reservation .sec_4 .items .item .text {
+  font-size: 2rem;
+}
+@media screen and (max-width: 480px) {
+  .reservation .sec_4 .items .item .text {
+    font-size: 1.6rem;
+  }
+}
+.reservation .line_btn_wrap {
+  background-image: url(../img/reservation/line_btn_bg.png);
+  background-size: cover;
+  padding: 10rem 0;
+}
+.reservation .line_btn_wrap .inner {
+  width: min(1200px, 90%);
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 7rem 0;
+  text-align: center;
+}
+.reservation .line_btn_wrap .inner > .title {
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+  color: #FA4141;
+  font-weight: 500;
+}
+.reservation .line_btn_wrap .inner > .text {
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+}
+.reservation .line_btn_wrap .inner a {
+  background-color: rgb(0, 174, 110);
+  height: 7rem;
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  width: min(90%, 550px);
+  position: relative;
+  border-radius: 50px;
+  margin: 0px auto;
+}
+.reservation .line_btn_wrap .inner a::after {
+  content: " ";
+  background-image: url(../img/top/btn_arrow_wh.svg);
+  background-size: cover;
+  position: absolute;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+}/*# sourceMappingURL=style.css.map */

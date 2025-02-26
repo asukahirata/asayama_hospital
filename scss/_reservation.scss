@@ -5,3 +5,264 @@
   予約について
 
 ---------------------------------*/
+.reservation {
+  .sub_mv { 
+    background-image: url(../img/reservation/reservation_mv.png);
+  }
+  .sec_1 {
+    width: min(1200px, 90%);
+    margin: 12rem auto;
+    @include common.mq('tab') {
+      margin: 6rem auto;
+    }
+    > .title {
+      text-align: center;
+      font-weight: 700;
+      font-size: 3rem;
+      margin-bottom: 6rem;
+      color: common.$main_color;
+      @include common.mq('sp') {
+        font-size: 2.4rem;
+      }
+    }
+    > .text {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 6rem;
+      span {
+        font-weight: 700;
+      }
+      @include common.mq('sp') {
+        font-size: 1.6rem;
+      }
+    }
+    .note {
+      color: #FA4141;
+      font-weight: 700;
+      background-color: rgba(250, 65, 65, 0.1);
+      font-size: 2rem;
+      text-align: center;
+      padding: 5rem 4rem;
+      margin-bottom: 10rem;
+    }
+    .line_btn {
+      a {
+        background-color: rgb(0, 174, 110);
+        height: 7rem;
+        color: rgb(255, 255, 255);
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        width: min(90%, 470px);
+        position: relative;
+        border-radius: 50px;
+        margin: 0px auto 2rem;
+        &::after {
+          content: " ";
+          background-image: url(../img/top/btn_arrow_wh.svg);
+          background-size: cover;
+          position: absolute;
+          right: 20px;
+          width: 20px;
+          height: 20px;
+        }
+      }
+      span {
+        text-align: center;
+        color: #FA4141;
+        font-size: 2rem;
+        display: block;
+      }
+    }
+  }
+  .sec_2 {
+    background-color: #FAFAFA;
+    padding: 6rem 0;
+    > .title {
+      text-align: center;
+      font-weight: 700;
+      font-size: 3rem;
+      margin-bottom: 6rem;
+      color: common.$main_color;
+      @include common.mq('sp') {
+        font-size: 2.4rem;
+      }
+    }
+    .list_wrap {
+      width: min(1200px, 90%);
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 7rem 10rem;
+      @include common.mq('tab') {
+        padding: 3rem;
+      }
+    }
+    dl {
+      margin-bottom: 2rem;
+      div {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 2rem;
+        border-top: 1px solid #C4C4C4;
+        &:last-child {
+          border-bottom: 1px solid #C4C4C4;
+        }
+        @include common.mq('sp') {
+          font-size: 1.6rem;
+        }
+      }
+      dt, dd {
+        padding: 1.6rem 2rem;
+        @include common.mq('tab') {
+          padding: 1rem 2rem;
+        }
+      }
+      dt {
+        background-color: rgba(0, 174, 110, 0.08);
+        width: 26%;
+        @include common.mq('tab') {
+          width: 40%;
+        }
+        @include common.mq('sp') {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .sec_3 {
+    width: min(1200px, 90%);
+    margin: 12rem auto;
+    @include common.mq('tab') {
+      margin: 6rem auto;
+    }
+    > .title {
+      text-align: center;
+      font-weight: 700;
+      font-size: 3rem;
+      margin-bottom: 6rem;
+      color: common.$main_color;
+      @include common.mq('sp') {
+        font-size: 2.4rem;
+      }
+    }
+    .list_wrap {
+      background-color: #FAFAFA;
+      padding: 6rem;
+    }
+    dl {
+      dt {
+        color: common.$main_color;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        font-weight: 700;
+        span {
+          text-decoration: underline;
+        }
+      }
+      dd {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid #C4C4C4;
+        span {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  .sec_4 {
+    background-color: #FAFAFA;
+    padding: 6rem 0;
+    > .title {
+      text-align: center;
+      font-weight: 700;
+      font-size: 3rem;
+      margin-bottom: 6rem;
+      color: common.$main_color;
+      @include common.mq('sp') {
+        font-size: 2.4rem;
+      }
+    }
+    .items {
+      width: min(1200px, 90%);
+      margin: 12rem auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .item {
+        background-color: #fff;
+        padding: 4rem;
+        width: 48%;
+        @include common.mq('tab') {
+          width: 100%;
+          margin-bottom: 1rem;
+          padding: 2rem;
+        }
+        .title {
+          color: common.$main_color;
+          font-size: 2.4rem;
+          letter-spacing: 0.1em;
+          margin-bottom: 2rem;
+          font-weight: 500;
+          @include common.mq('sp') {
+            font-size: 1.8rem;
+          }
+        }
+        .text {
+          font-size: 2rem;
+          @include common.mq('sp') {
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+  .line_btn_wrap {
+    background-image: url(../img/reservation/line_btn_bg.png);
+    background-size: cover;
+    padding: 10rem 0;
+    .inner {
+      width: min(1200px, 90%);
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 7rem 0;
+      text-align: center;
+      > .title {
+        font-size: 2.2rem;
+        margin-bottom: 3rem;
+        color: #FA4141;
+        font-weight: 500;
+      }
+      > .text {
+        font-size: 1.8rem;
+        margin-bottom: 3rem;
+      }
+      a {
+        background-color: rgb(0, 174, 110);
+        height: 7rem;
+        color: rgb(255, 255, 255);
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        width: min(90%, 550px);
+        position: relative;
+        border-radius: 50px;
+        margin: 0px auto;
+        &::after {
+          content: " ";
+          background-image: url(../img/top/btn_arrow_wh.svg);
+          background-size: cover;
+          position: absolute;
+          right: 20px;
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+
+  }
+}
